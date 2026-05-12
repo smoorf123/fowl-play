@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fowl Play: Mapping America's Poultry Problem</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="fp-root">
+
+    <!-- HEADER -->
+    <header id="fp-header">
+      <div id="fp-header-left">
+        <h1><span class="chicken" aria-hidden="true">🐔</span> Fowl Play</h1>
+        <p id="fp-tagline">Mapping America's Poultry Problem &middot; 2000–2020</p>
+      </div>
+      <nav id="fp-view-toggle" aria-label="View switcher">
+        <button class="view-btn active" id="btn-map"    onclick="switchView('map')">Map view</button>
+        <button class="view-btn"        id="btn-net"    onclick="switchView('network')">Corporate network</button>
+      </nav>
+    </header>
+
+    <!-- FILTERS -->
+    <section id="fp-filters" aria-label="Filters">
+      <span class="filter-label">Product</span>
+      <div class="filter-pills" id="pills-type" role="group" aria-label="Product type filter">
+        <button class="pill active" data-v="all"         onclick="setTypeFilter('all')">All</button>
+        <button class="pill"        data-v="Broilers"    onclick="setTypeFilter('Broilers')">Broilers</button>
+        <button class="pill"        data-v="Comminuted"  onclick="setTypeFilter('Comminuted')">Comminuted</button>
+        <button class="pill"        data-v="Ground"      onclick="setTypeFilter('Ground')">Ground</button>
+        <button class="pill"        data-v="Parts"       onclick="setTypeFilter('Parts')">Parts</button>
+        <button class="pill"        data-v="Whole"       onclick="setTypeFilter('Whole')">Whole</button>
+      </div>
+      <span class="filter-label" style="margin-left:8px">Corp.</span>
+      <div class="filter-pills" id="pills-corp" role="group" aria-label="Corporate parent filter">
+        <button class="pill active" data-c="all"               onclick="setCorpFilter('all')">All</button>
+        <button class="pill"        data-c="Tyson"             onclick="setCorpFilter('Tyson')">Tyson</button>
+        <button class="pill"        data-c="Perdue"            onclick="setCorpFilter('Perdue')">Perdue</button>
+        <button class="pill"        data-c="Pilgrim's Pride"   onclick="setCorpFilter(&quot;Pilgrim's Pride&quot;)">Pilgrim's</button>
+        <button class="pill"        data-c="Sanderson"         onclick="setCorpFilter('Sanderson')">Sanderson</button>
+        <button class="pill"        data-c="Wayne Farms"       onclick="setCorpFilter('Wayne Farms')">Wayne</button>
+        <button class="pill"        data-c="Independent"       onclick="setCorpFilter('Independent')">Indep.</button>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main id="fp-content">
+
+      <!-- MAP VIEW -->
+      <div id="fp-map-view" aria-label="US map of poultry plants">
+        <div id="fp-map-container">
+          <svg id="fp-map-svg" viewBox="0 0 900 540" role="img"
+               aria-label="Interactive US map showing poultry plant salmonella positivity rates">
+          </svg>
+
+          <div id="fp-legend" aria-label="Map legend">
+            <div class="leg-title">Salmonella positivity rate</div>
+            <div class="leg-row"><span class="leg-dot safe"></span>&lt; 5%</div>
+            <div class="leg-row"><span class="leg-dot caution"></span>5–15%</div>
+            <div class="leg-row"><span class="leg-dot danger"></span>15–30%</div>
+            <div class="leg-row"><span class="leg-dot severe"></span>&gt; 30%</div>
+            <div class="leg-divider"></div>
+            <div class="leg-title">Dot size = sample volume</div>
+          </div>
+
+          <div id="fp-tooltip" role="tooltip" aria-live="polite">
+            <div class="tt-name" id="tt-name">—</div>
+            <div class="tt-row"><span>Rate</span>    <span class="tt-val" id="tt-rate">—</span></div>
+            <div class="tt-row"><span>Samples</span> <span class="tt-val" id="tt-samples">—</span></div>
+            <div class="tt-row"><span>Corp.</span>   <span class="tt-val" id="tt-corp">—</span></div>
+            <div class="tt-row"><span>Type</span>    <span class="tt-val" id="tt-type">—</span></div>
+            <div class="tt-hint">Click for full history</div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside id="fp-sidebar" class="hidden" aria-label="Plant detail panel">
+          <div id="fp-sidebar-inner">
+            <h2 id="sidebar-plant-name">Plant details</h2>
+
+            <div class="stat-row stat-row-highlight"><span class="stat-label">Risk level</span>      <span class="stat-val" id="sb-risk">—</span></div>
+            <div class="stat-row"><span class="stat-label">Positivity rate</span>                     <span class="stat-val" id="sb-rate">—</span></div>
+            <div class="stat-row"><span class="stat-label">Industry avg</span>                        <span class="stat-val" id="sb-industry-avg">—</span></div>
+            <div class="stat-row"><span class="stat-label">vs. avg</span>                             <span class="stat-val" id="sb-vs-avg">—</span></div>
+            <div class="stat-row"><span class="stat-label">Rate trend</span>                          <span class="stat-val" id="sb-trend">—</span></div>
+
+            <div class="stat-divider">Plant info</div>
+            <div class="stat-row"><span class="stat-label">Corp. parent</span> <span class="stat-val" id="sb-corp">—</span></div>
+            <div class="stat-row"><span class="stat-label">Product type</span> <span class="stat-val" id="sb-type">—</span></div>
+            <div class="stat-row"><span class="stat-label">State</span>        <span class="stat-val" id="sb-state">—</span></div>
+            <div class="stat-row"><span class="stat-label">Active years</span> <span class="stat-val" id="sb-years">—</span></div>
+
+            <div class="stat-divider">Testing volume</div>
+            <div class="stat-row"><span class="stat-label">Total samples</span> <span class="stat-val" id="sb-samples">—</span></div>
+            <div class="stat-row"><span class="stat-label">Positive tests</span><span class="stat-val" id="sb-pos">—</span></div>
+
+            <div id="sidebar-history">
+              <h3>Positivity rate by 5-yr period</h3>
+              <div id="sb-history-bars"></div>
+            </div>
+            <button id="sidebar-close" onclick="closeSidebar()" aria-label="Close plant detail panel">Close</button>
+          </div>
+        </aside>
+      </div>
+
+      <!-- NETWORK VIEW -->
+      <div id="fp-net-view" aria-label="Corporate network graph">
+        <svg id="fp-net-svg" viewBox="0 0 900 520" role="img"
+             aria-label="Network diagram showing corporate parents and their owned plants">
+        </svg>
+      </div>
+
+    </main>
+
+    <!-- SCROLL HINT -->
+    <div id="fp-scroll-hint" aria-hidden="true">↓ scroll for full rankings &amp; corporate breakdown</div>
+
+    <!-- STATS BAR -->
+    <footer id="fp-stats-bar" aria-label="Summary statistics">
+      <div class="stats-metric">
+        <span class="stats-metric-label">Plants shown</span>
+        <span class="stats-metric-value" id="stat-plants">—</span>
+      </div>
+      <div class="stats-metric">
+        <span class="stats-metric-label">Total samples</span>
+        <span class="stats-metric-value" id="stat-samples">—</span>
+      </div>
+      <div class="stats-metric">
+        <span class="stats-metric-label">Avg positivity</span>
+        <span class="stats-metric-value caution" id="stat-rate">—</span>
+      </div>
+      <div class="stats-metric">
+        <span class="stats-metric-label">Highest rate plant</span>
+        <span class="stats-metric-value danger" id="stat-worst">—</span>
+      </div>
+      <div class="stats-metric">
+        <span class="stats-metric-label">Corp. parents</span>
+        <span class="stats-metric-value" id="stat-corps">—</span>
+      </div>
+    </footer>
+
+    <!-- PLANT RANKINGS TABLE -->
+    <section id="fp-rankings" aria-label="Plant rankings table">
+      <div id="fp-rankings-hd">
+        <div>
+          <h2>All Plants</h2>
+          <p class="rankings-subtitle" id="rankings-count">— plants</p>
+        </div>
+      </div>
+      <div id="fp-table-wrap">
+        <table id="fp-rankings-table" aria-label="Sortable plant rankings">
+          <thead>
+            <tr>
+              <th class="no-sort rank-num-col">#</th>
+              <th class="sort-th sort-active" data-sort="rate" onclick="setSort('rate')">Salmonella Rate <span class="sort-icon">↓</span></th>
+              <th class="sort-th" data-sort="name" onclick="setSort('name')">Plant <span class="sort-icon"></span></th>
+              <th class="sort-th" data-sort="corp" onclick="setSort('corp')">Corp. <span class="sort-icon"></span></th>
+              <th class="sort-th" data-sort="type" onclick="setSort('type')">Type <span class="sort-icon"></span></th>
+              <th class="sort-th" data-sort="samples" onclick="setSort('samples')" style="text-align:right">Samples <span class="sort-icon"></span></th>
+              <th class="sort-th" data-sort="positives" onclick="setSort('positives')" style="text-align:right">Positives <span class="sort-icon"></span></th>
+              <th class="no-sort" style="text-align:center">Trend</th>
+            </tr>
+          </thead>
+          <tbody id="fp-rankings-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CORPORATE BREAKDOWN -->
+    <section id="fp-corp-breakdown" aria-label="Corporate breakdown">
+      <h2>Corporate Breakdown</h2>
+      <p class="breakdown-subtitle">Aggregated by parent company · sorted by positivity rate · relative bar = share of max</p>
+      <div id="fp-corp-bars"></div>
+    </section>
+
+  </div><!-- /#fp-root -->
+
+  <!-- D3 + TopoJSON (CDN, swap for local copies if needed) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
+  <!-- App scripts (order matters) -->
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/network.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
