@@ -209,7 +209,7 @@ function renderCorpBreakdown() {
     const totalP = d3.sum(ps, p => p.positives);
     return { corp, rate: totalP / totalS, samples: totalS, count: ps.length };
   })
-    .filter(c => c.corp !== 'Independent')  // Exclude Independent
+    .filter(c => c.corp !== 'Independent')
     .sort((a, b) => b.rate - a.rate);
 
   const maxRate = d3.max(corps, c => c.rate) || 1;
