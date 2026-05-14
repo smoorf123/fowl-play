@@ -12,6 +12,10 @@ let corpFilter = 'all';
 let sortKey = 'rate';
 let sortAsc  = false;
 
+/* ── Search / expand state (rankings table) ─────────────────── */
+let searchQuery      = '';
+let rankingsExpanded = false;
+
 /* Exported to map.js / network.js via global scope */
 function filteredPlants() {
   return PLANTS.filter(p => {
@@ -32,6 +36,7 @@ function filteredPlants() {
 /* ── Filter setters ─────────────────────────────────────────── */
 function setTypeFilter(v) {
   typeFilter = v;
+  rankingsExpanded = false;
   document.querySelectorAll('#pills-type .pill').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.v === v);
   });
@@ -46,6 +51,7 @@ function setTypeFilter(v) {
 
 function setCorpFilter(v) {
   corpFilter = v;
+  rankingsExpanded = false;
   document.querySelectorAll('#pills-corp .pill').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.c === v);
   });
@@ -93,7 +99,10 @@ function setSort(key) {
 
 /* ── Rankings table ─────────────────────────────────────────── */
 function renderRankings() {
-  const plants    = filteredPlants().slice();
+  const q      = searchQuery.trim().toLowerCase();
+  const plants = filteredPlants()
+    .filter(p => !q || p.name.toLowerCase().includes(q) || p.state.toLowerCase().includes(q))
+    .slice();
   const allS      = d3.sum(PLANTS, p => p.samples);
   const allP      = d3.sum(PLANTS, p => p.positives);
   const indAvg    = allP / allS;
@@ -108,26 +117,46 @@ function renderRankings() {
     return 0;
   });
 
-  document.getElementById('rankings-count').textContent =
-    `${plants.length} plant${plants.length !== 1 ? 's' : ''} · click any row to open on map`;
+  const total = filteredPlants().length;
+  document.getElementById('rankings-count').textContent = q
+    ? `${plants.length} of ${total} plant${total !== 1 ? 's' : ''} · click any row to open on map`
+    : `${plants.length} plant${plants.length !== 1 ? 's' : ''} · click any row to open on map`;
+
+  /* Slice to 5 rows unless searching or expanded */
+  const showAll    = rankingsExpanded || !!q;
+  const visible    = showAll ? plants : plants.slice(0, 5);
+  const expandBtn  = document.getElementById('rankings-expand-btn');
+  if (expandBtn) {
+    if (plants.length <= 5 || !!q) {
+      expandBtn.style.display = 'none';
+    } else {
+      expandBtn.style.display = '';
+      expandBtn.textContent   = rankingsExpanded
+        ? 'Show less ▲'
+        : `Show all ${plants.length} plants ▼`;
+    }
+  }
 
   const tbody = document.getElementById('fp-rankings-tbody');
   tbody.innerHTML = '';
 
-  plants.forEach((p, i) => {
-    let trendSymbol = '●', trendCls = 'trend-stable';
+  visible.forEach((p, i) => {
+    let trendSymbol = '●', trendCls = 'trend-stable', delta = 0;
     if (p.history.length >= 2) {
       const firstRate = p.history[0].positives / p.history[0].samples;
       const lastRate  = p.history[p.history.length - 1].positives / p.history[p.history.length - 1].samples;
-      const delta     = lastRate - firstRate;
+      delta           = lastRate - firstRate;
       if      (delta >  0.03) { trendSymbol = '▲'; trendCls = 'trend-worse'; }
       else if (delta < -0.03) { trendSymbol = '▼'; trendCls = 'trend-better'; }
     }
 
-    const ratePct  = (p.rate * 100).toFixed(1);
-    const barW     = (p.rate / maxRate * 100).toFixed(1);
-    const col      = rateColor(p.rate);
-    const corpCol  = CORP_COLORS[p.corp] || '#888';
+    const ratePct    = (p.rate * 100).toFixed(1);
+    const barW       = (p.rate / maxRate * 100).toFixed(1);
+    const col        = rateColor(p.rate);
+    const corpCol    = CORP_COLORS[p.corp] || '#888';
+    const trendTitle = p.history.length < 2
+      ? 'Insufficient quarterly data'
+      : delta > 0.03 ? 'Rate worsening over time' : delta < -0.03 ? 'Rate improving over time' : 'Rate stable over time';
 
     const tr = document.createElement('tr');
     tr.className = 'ranking-row';
@@ -156,7 +185,7 @@ function renderRankings() {
       <td><span class="rank-type-badge">${p.type}</span></td>
       <td class="rank-samples">${p.samples.toLocaleString()}</td>
       <td class="rank-pos">${p.positives.toLocaleString()}</td>
-      <td class="trend-cell"><span class="${trendCls}" title="${delta > 0.03 ? 'Rate worsening 2000→2020' : delta < -0.03 ? 'Rate improving 2000→2020' : 'Stable 2000→2020'}">${trendSymbol}</span></td>
+      <td class="trend-cell"><span class="${trendCls}" title="${trendTitle}">${trendSymbol}</span></td>
     `;
     tr.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -315,4 +344,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderRankings();
   renderInsights();
   renderCorpBreakdown();
+
+  /* ── Rankings search + expand wiring ── */
+  document.getElementById('rankings-expand-btn').addEventListener('click', () => {
+    rankingsExpanded = !rankingsExpanded;
+    renderRankings();
+  });
+
+  document.getElementById('rankings-search').addEventListener('input', function () {
+    searchQuery      = this.value;
+    rankingsExpanded = false;
+    renderRankings();
+  });
 });

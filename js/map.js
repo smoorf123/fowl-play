@@ -5,7 +5,19 @@
 'use strict';
 
 /* ── Module-level state ────────────────────────────────────── */
-let projection, pathGen;
+let projection, pathGen, zoomBehavior, selectedPlantId = null;
+
+/* FIPS → two-letter abbreviation (us-atlas stores numeric FIPS as d.id) */
+const FIPS_ABBR = {
+  '01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT',
+  '10':'DE','11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL',
+  '18':'IN','19':'IA','20':'KS','21':'KY','22':'LA','23':'ME','24':'MD',
+  '25':'MA','26':'MI','27':'MN','28':'MS','29':'MO','30':'MT','31':'NE',
+  '32':'NV','33':'NH','34':'NJ','35':'NM','36':'NY','37':'NC','38':'ND',
+  '39':'OH','40':'OK','41':'OR','42':'PA','44':'RI','45':'SC','46':'SD',
+  '47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA','54':'WV',
+  '55':'WI','56':'WY',
+};
 const mapSvg      = () => d3.select('#fp-map-svg');
 const tooltip     = document.getElementById('fp-tooltip');
 const mapContEl   = document.getElementById('fp-map-container');
@@ -33,25 +45,86 @@ function buildMap(us) {
     .translate([W / 2 - 20, H / 2 + 20]);
   pathGen = d3.geoPath(projection);
 
+  /* Zoom + pan – wheel only fires when Ctrl is held so normal page scroll works */
+  zoomBehavior = d3.zoom()
+    .scaleExtent([1, 8])
+    .filter((event) => {
+      if (event.type === 'wheel') return event.ctrlKey;
+      return !event.button; // allow drag, block right/middle clicks
+    })
+    .on('zoom', (event) => {
+      mapSvg().select('#zoom-layer').attr('transform', event.transform);
+      const btn = document.getElementById('map-zoom-reset');
+      if (btn) btn.style.display = event.transform.k > 1.05 ? 'block' : 'none';
+    });
+
+  mapSvg().call(zoomBehavior);
+
+  /* Zoom container wrapping all map layers */
+  const zoomLayer = mapSvg().append('g').attr('id', 'zoom-layer');
+
   /* State fills */
-  mapSvg().append('g').attr('id', 'states')
+  const stateFeatures = topojson.feature(us, us.objects.states).features;
+
+  zoomLayer.append('g').attr('id', 'states')
     .selectAll('path')
-    .data(topojson.feature(us, us.objects.states).features)
+    .data(stateFeatures)
     .join('path')
     .attr('class', 'state-path')
     .attr('d', pathGen);
 
+  /* State abbreviation labels – sit above fills, below plant dots */
+  zoomLayer.append('g').attr('id', 'state-labels')
+    .selectAll('text')
+    .data(stateFeatures)
+    .join('text')
+    .attr('class', 'state-label')
+    .attr('text-anchor', 'middle')
+    .attr('dominant-baseline', 'middle')
+    .attr('x', d => { const c = pathGen.centroid(d); return isNaN(c[0]) ? -999 : c[0]; })
+    .attr('y', d => { const c = pathGen.centroid(d); return isNaN(c[1]) ? -999 : c[1]; })
+    .text(d => FIPS_ABBR[String(d.id).padStart(2, '0')] || '');
+
   /* Plant dot layer */
-  mapSvg().append('g').attr('id', 'plants');
+  zoomLayer.append('g').attr('id', 'plants');
+
+  /* Reset zoom button (shown only when zoomed in) */
+  const resetBtn       = document.createElement('button');
+  resetBtn.id          = 'map-zoom-reset';
+  resetBtn.className   = 'map-zoom-reset';
+  resetBtn.textContent = '⊙ Reset zoom';
+  resetBtn.style.display = 'none';
+  resetBtn.onclick = () => {
+    mapSvg().transition().duration(400).call(zoomBehavior.transform, d3.zoomIdentity);
+  };
+  document.getElementById('fp-map-container').appendChild(resetBtn);
+
+  /* Ctrl+scroll hint — shown briefly when user scrolls without Ctrl */
+  const hintEl     = document.createElement('div');
+  hintEl.id        = 'map-zoom-hint';
+  hintEl.className = 'map-zoom-hint';
+  hintEl.textContent = 'Ctrl + scroll to zoom';
+  document.getElementById('fp-map-container').appendChild(hintEl);
+
+  let hintTimer;
+  document.getElementById('fp-map-container').addEventListener('wheel', (event) => {
+    if (!event.ctrlKey) {
+      hintEl.classList.add('visible');
+      clearTimeout(hintTimer);
+      hintTimer = setTimeout(() => hintEl.classList.remove('visible'), 1800);
+    }
+  }, { passive: true });
 
   renderPlants();
 }
 
 /* ── Plant dot rendering ────────────────────────────────────── */
 function renderPlants() {
-  const plants     = filteredPlants();
+  /* Sort largest circles first so they render behind smaller ones,
+     keeping smaller (often higher-rate) plants clickable on top. */
+  const plants     = filteredPlants().slice().sort((a, b) => b.samples - a.samples);
   const maxSamples = d3.max(plants, p => p.samples) || 1;
-  const rScale     = d3.scaleSqrt().domain([0, maxSamples]).range([3, 14]);
+  const rScale     = d3.scaleSqrt().domain([0, maxSamples]).range([2, 7]);
 
   const grp = mapSvg().select('#plants');
   grp.selectAll('circle').remove();
@@ -65,6 +138,7 @@ function renderPlants() {
 
     grp.append('circle')
       .attr('class', 'plant-dot')
+      .attr('data-plant-id', p.id)
       .attr('cx', x).attr('cy', y)
       .attr('r', r)
       .attr('fill', col)
@@ -80,6 +154,14 @@ function renderPlants() {
       .on('click', () => showSidebar(p))
       .on('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') showSidebar(p); });
   });
+
+  /* Restore selected ring after re-render and bring it to front */
+  if (selectedPlantId !== null) {
+    const selNode = grp.select(`.plant-dot[data-plant-id="${selectedPlantId}"]`);
+    selNode.classed('selected', true);
+    const el = selNode.node();
+    if (el) el.parentNode.appendChild(el);
+  }
 
   updateStats(plants);
 }
@@ -109,6 +191,15 @@ function hideTooltip() {
 
 /* ── Sidebar ─────────────────────────────────────────────────── */
 function showSidebar(p) {
+  /* Update selection ring */
+  selectedPlantId = p.id;
+  const grp = mapSvg().select('#plants');
+  grp.selectAll('.plant-dot').classed('selected', false);
+  const selNode = grp.select(`.plant-dot[data-plant-id="${p.id}"]`);
+  selNode.classed('selected', true);
+  const el = selNode.node();
+  if (el) el.parentNode.appendChild(el); // bring to front
+
   const sidebar = document.getElementById('fp-sidebar');
   sidebar.classList.remove('hidden');
 
@@ -179,6 +270,8 @@ function showSidebar(p) {
 }
 
 function closeSidebar() {
+  selectedPlantId = null;
+  mapSvg().select('#plants').selectAll('.plant-dot').classed('selected', false);
   document.getElementById('fp-sidebar').classList.add('hidden');
 }
 

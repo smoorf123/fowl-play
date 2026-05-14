@@ -223,6 +223,27 @@ html, body {
   transition: r 0.1s;
 }
 #fp-map-svg .plant-dot:hover { stroke-width: 2px !important; }
+/* Suppress the browser's focus rectangle on mouse clicks;
+   keyboard focus (:focus-visible) still shows an outline. */
+#fp-map-svg .plant-dot:focus:not(:focus-visible) { outline: none; }
+
+/* Selected plant ring */
+#fp-map-svg .plant-dot.selected {
+  stroke: #fff;
+  stroke-width: 2.5px;
+  stroke-opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.45));
+}
+
+/* State abbreviation labels */
+.state-label {
+  font-family: var(--ff-mono);
+  font-size: 8px;
+  fill: var(--muted);
+  fill-opacity: 0.55;
+  pointer-events: none;
+  user-select: none;
+}
 
 /* ── Map legend ───────────────────────────────────────────── */
 #fp-legend {
@@ -505,6 +526,47 @@ html, body {
   gap: 10px;
 }
 
+#rankings-search-wrap {
+  padding: 0 0 16px;
+}
+
+#rankings-search {
+  display: block;
+  width: 100%;
+  font-family: var(--ff-mono);
+  font-size: 14px;
+  padding: 11px 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border2);
+  background: var(--bg2);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+#rankings-search::placeholder { color: var(--muted); }
+#rankings-search:focus {
+  border-color: var(--text);
+  box-shadow: 0 0 0 3px rgba(128,128,128,0.12);
+}
+
+#rankings-expand-wrap {
+  text-align: center;
+  padding: 12px 0 28px;
+}
+
+#rankings-expand-btn {
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: 0.5px solid var(--border2);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+#rankings-expand-btn:hover { background: var(--bg2); color: var(--text); }
+
 #fp-rankings-hd h2 {
   font-size: 16px;
   font-weight: 700;
@@ -628,9 +690,10 @@ html, body {
 
 /* ── Corporate breakdown section ──────────────────────────── */
 #fp-corp-breakdown {
-  padding: 28px 20px 48px;
-  border-top: 0.5px solid var(--border);
+  flex: 1;
+  padding: 28px 36px 28px 20px;
   background: var(--bg2);
+  min-width: 0;
 }
 
 #fp-corp-breakdown h2 {
@@ -649,7 +712,6 @@ html, body {
 
 .corp-bar-row {
   margin-bottom: 20px;
-  max-width: 680px;
 }
 
 .corp-bar-header {
@@ -724,11 +786,22 @@ html, body {
   line-height: 1.6;
 }
 
+/* ── Key findings + corp breakdown row ────────────────────── */
+#fp-insights-corp-row {
+  display: flex;
+  align-items: stretch;
+  border-top: 0.5px solid var(--border);
+}
+
 /* ── Key findings section ─────────────────────────────────── */
 #fp-insights {
-  padding: 24px 20px 20px;
-  border-top: 0.5px solid var(--border);
+  flex: 1;
+  padding: 24px 20px 28px;
   background: var(--bg);
+  border-right: 0.5px solid var(--border);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #fp-insights-header {
@@ -751,9 +824,10 @@ html, body {
 }
 
 #fp-insights-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  flex: 1;
 }
 
 .insight-card {
@@ -761,20 +835,21 @@ html, body {
   border: 0.5px solid var(--border2);
   border-radius: var(--radius-lg);
   padding: 14px 16px;
+  flex: 1;
 }
 
 .insight-card-label {
-  font-size: 10px;
+  font-size: 11px;
   font-family: var(--ff-mono);
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: var(--muted);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .insight-card-body {
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--text);
 }
 
@@ -788,6 +863,70 @@ html, body {
   font-size: 12px;
   padding: 12px 0;
 }
+
+/* ── Network tooltip ──────────────────────────────────────── */
+#fp-net-view { position: relative; }
+
+#fp-net-tooltip {
+  position: absolute;
+  top: 0; left: 0;
+  background: var(--bg);
+  border: 0.5px solid var(--border2);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  font-family: var(--ff-mono);
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+  max-width: 210px;
+  z-index: 200;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+#fp-net-tooltip.visible { opacity: 1; }
+
+/* Suppress SVG focus rings on network dots */
+#fp-net-svg g:focus,
+#fp-net-svg circle:focus { outline: none; }
+
+/* ── Map zoom hint ─────────────────────────────────────────── */
+.map-zoom-hint {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  z-index: 20;
+}
+.map-zoom-hint.visible { opacity: 1; }
+
+/* ── Map zoom reset button ─────────────────────────────────── */
+.map-zoom-reset {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 0.5px solid var(--border2);
+  background: var(--bg);
+  color: var(--muted);
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.15s, color 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.map-zoom-reset:hover { background: var(--bg2); color: var(--text); }
 
 /* ── Attribution footer ───────────────────────────────────── */
 #fp-attribution {

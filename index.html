@@ -104,15 +104,23 @@
       </div>
 
       <!-- NETWORK VIEW -->
-      <div id="fp-net-view" aria-label="Corporate network graph">
+      <div id="fp-net-view" aria-label="Corporate strip chart">
         <div id="fp-net-intro">
-          Each corporation appears as a central hub; its plants orbit as satellites colored by their individual positivity rate.
-          The arc around each hub encodes the company's <em>aggregate</em> rate — a wider, redder arc means higher contamination across all owned facilities.
-          Click any satellite plant to open its full detail panel on the map.
+          Each column represents a major corporate parent. Plants appear as dots positioned by their individual salmonella positivity rate — dots higher up are more contaminated.
+          The colored bar marks each company's <em>aggregate</em> rate; the dashed line is the industry average.
+          Hover any dot for details, or click it to jump to that plant on the map.
         </div>
         <svg id="fp-net-svg" viewBox="0 0 900 520" role="img"
-             aria-label="Network diagram showing corporate parents and their owned plants">
+             aria-label="Strip chart showing salmonella positivity rates by corporate parent">
         </svg>
+        <div id="fp-net-tooltip" role="tooltip" aria-live="polite">
+          <div class="tt-name" id="ntt-name">—</div>
+          <div class="tt-row"><span>Rate</span>    <span class="tt-val" id="ntt-rate">—</span></div>
+          <div class="tt-row"><span>Samples</span> <span class="tt-val" id="ntt-samples">—</span></div>
+          <div class="tt-row"><span>Corp.</span>   <span class="tt-val" id="ntt-corp">—</span></div>
+          <div class="tt-row"><span>State</span>   <span class="tt-val" id="ntt-state">—</span></div>
+          <div class="tt-hint">Click to open on map</div>
+        </div>
       </div>
 
     </main>
@@ -144,14 +152,22 @@
       </div>
     </footer>
 
-    <!-- KEY FINDINGS -->
-    <section id="fp-insights" aria-label="Key findings">
-      <div id="fp-insights-header">
-        <h2>Key Findings</h2>
-        <p id="fp-insights-note">Updates with active filters</p>
-      </div>
-      <div id="fp-insights-body"></div>
-    </section>
+    <!-- KEY FINDINGS + CORPORATE BREAKDOWN (side by side) -->
+    <div id="fp-insights-corp-row">
+      <section id="fp-insights" aria-label="Key findings">
+        <div id="fp-insights-header">
+          <h2>Key Findings</h2>
+          <p id="fp-insights-note">Updates with active filters</p>
+        </div>
+        <div id="fp-insights-body"></div>
+      </section>
+
+      <section id="fp-corp-breakdown" aria-label="Corporate breakdown">
+        <h2>Major Corporations Comparison</h2>
+        <p class="breakdown-subtitle">Salmonella positivity rate measures how often a plant's samples tested positive — a direct indicator of food-safety practices at the processing level. Corporations whose plants consistently exceed the industry average bear disproportionate responsibility for contamination risk reaching consumers.</p>
+        <div id="fp-corp-bars"></div>
+      </section>
+    </div>
 
     <!-- PLANT RANKINGS TABLE -->
     <section id="fp-rankings" aria-label="Plant rankings table">
@@ -160,6 +176,9 @@
           <h2>All Plants</h2>
           <p class="rankings-subtitle" id="rankings-count">— plants</p>
         </div>
+      </div>
+      <div id="rankings-search-wrap">
+        <input type="text" id="rankings-search" placeholder="Search by plant name or state…" autocomplete="off" aria-label="Search plants by name or state" />
       </div>
       <div id="fp-table-wrap">
         <table id="fp-rankings-table" aria-label="Sortable plant rankings">
@@ -178,13 +197,9 @@
           <tbody id="fp-rankings-tbody"></tbody>
         </table>
       </div>
-    </section>
-
-    <!-- CORPORATE BREAKDOWN -->
-    <section id="fp-corp-breakdown" aria-label="Corporate breakdown">
-      <h2>Major Corporations Comparison</h2>
-      <p class="breakdown-subtitle">Salmonella positivity rate measures how often a plant's samples tested positive — a direct indicator of food-safety practices at the processing level. Corporations whose plants consistently exceed the industry average bear disproportionate responsibility for contamination risk reaching consumers.</p>
-      <div id="fp-corp-bars"></div>
+      <div id="rankings-expand-wrap">
+        <button id="rankings-expand-btn"></button>
+      </div>
     </section>
 
     <!-- ATTRIBUTION -->
