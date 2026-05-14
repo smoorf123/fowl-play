@@ -37,6 +37,7 @@ function setTypeFilter(v) {
   });
   renderPlants();
   renderRankings();
+  renderInsights();
   renderCorpBreakdown();
   if (document.getElementById('fp-net-view').classList.contains('active')) {
     renderNetwork();
@@ -50,6 +51,7 @@ function setCorpFilter(v) {
   });
   renderPlants();
   renderRankings();
+  renderInsights();
   renderCorpBreakdown();
   if (document.getElementById('fp-net-view').classList.contains('active')) {
     renderNetwork();
@@ -113,13 +115,14 @@ function renderRankings() {
   tbody.innerHTML = '';
 
   plants.forEach((p, i) => {
-    const firstRate = p.history[0].positives / p.history[0].samples;
-    const lastRate  = p.history[p.history.length - 1].positives / p.history[p.history.length - 1].samples;
-    const delta     = lastRate - firstRate;
-    let trendSymbol, trendCls;
-    if      (delta >  0.03) { trendSymbol = '▲'; trendCls = 'trend-worse'; }
-    else if (delta < -0.03) { trendSymbol = '▼'; trendCls = 'trend-better'; }
-    else                    { trendSymbol = '●'; trendCls = 'trend-stable'; }
+    let trendSymbol = '●', trendCls = 'trend-stable';
+    if (p.history.length >= 2) {
+      const firstRate = p.history[0].positives / p.history[0].samples;
+      const lastRate  = p.history[p.history.length - 1].positives / p.history[p.history.length - 1].samples;
+      const delta     = lastRate - firstRate;
+      if      (delta >  0.03) { trendSymbol = '▲'; trendCls = 'trend-worse'; }
+      else if (delta < -0.03) { trendSymbol = '▼'; trendCls = 'trend-better'; }
+    }
 
     const ratePct  = (p.rate * 100).toFixed(1);
     const barW     = (p.rate / maxRate * 100).toFixed(1);
@@ -217,15 +220,99 @@ function renderCorpBreakdown() {
   });
 }
 
+/* ── Key findings ───────────────────────────────────────────── */
+function renderInsights() {
+  const el = document.getElementById('fp-insights-body');
+  if (!el) return;
+
+  const plants = filteredPlants();
+  if (!plants.length) {
+    el.innerHTML = '<p class="insights-empty">No plants match the current filters.</p>';
+    return;
+  }
+
+  const allS   = d3.sum(PLANTS, p => p.samples);
+  const allP   = d3.sum(PLANTS, p => p.positives);
+  const indAvg = allP / allS;
+
+  const worstPlant = plants.reduce((a, b) => b.rate > a.rate ? b : a);
+
+  const corpGroups = d3.group(plants.filter(p => p.corp !== 'Independent'), p => p.corp);
+  const corps = Array.from(corpGroups, ([corp, ps]) => ({
+    corp,
+    rate: d3.sum(ps, p => p.positives) / d3.sum(ps, p => p.samples),
+  })).sort((a, b) => b.rate - a.rate);
+  const worstCorp = corps[0];
+  const bestCorp  = corps[corps.length - 1];
+
+  const aboveAvg = plants.filter(p => p.rate > indAvg).length;
+  const abovePct = (aboveAvg / plants.length * 100).toFixed(0);
+  const highRisk = plants.filter(p => p.rate >= 0.15).length;
+
+  const corpCard = (worstCorp && bestCorp && worstCorp.corp !== bestCorp.corp) ? `
+    <div class="insight-card">
+      <div class="insight-card-label">Corporate spread</div>
+      <div class="insight-card-body">
+        <span class="insight-hi danger">${worstCorp.corp}</span> averages
+        <span class="insight-hi danger">${(worstCorp.rate * 100).toFixed(1)}%</span> positivity —
+        ${(worstCorp.rate / bestCorp.rate).toFixed(1)}× higher than
+        <span class="insight-hi safe">${bestCorp.corp}</span> at
+        <span class="insight-hi safe">${(bestCorp.rate * 100).toFixed(1)}%</span>.
+        Switch to the Corporate Network view to compare all companies at once.
+      </div>
+    </div>` : '';
+
+  el.innerHTML = `
+    <div class="insight-card">
+      <div class="insight-card-label">Highest-risk plant</div>
+      <div class="insight-card-body">
+        <span class="insight-hi danger">${worstPlant.name}</span> (${worstPlant.state}) tested positive
+        in <span class="insight-hi danger">${(worstPlant.rate * 100).toFixed(1)}%</span> of samples —
+        ${(worstPlant.rate / indAvg).toFixed(1)}× the industry average of
+        ${(indAvg * 100).toFixed(1)}%. Click its dot on the map to see the full quarterly breakdown.
+      </div>
+    </div>
+    ${corpCard}
+    <div class="insight-card">
+      <div class="insight-card-label">Distribution</div>
+      <div class="insight-card-body">
+        <span class="insight-hi">${abovePct}%</span> of the ${plants.length} plants shown exceed
+        the <span class="insight-hi">${(indAvg * 100).toFixed(1)}%</span> industry average, and
+        <span class="insight-hi danger">${highRisk}</span> are flagged high-risk (≥ 15% positivity).
+        Use the filters above to narrow by product type or corporate parent.
+      </div>
+    </div>
+  `;
+}
+
 /* ── Bootstrap ──────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', async () => {
-  /* Map starts visible */
   document.getElementById('fp-map-view').style.display = 'flex';
   document.getElementById('fp-net-view').style.display  = 'none';
-  
-  /* Load real data, then render */
-  await loadPlantData();
+
+  try {
+    await loadPlantData();
+  } catch (err) {
+    document.getElementById('fp-content').innerHTML = `
+      <div style="
+        display:flex; flex-direction:column; align-items:center; justify-content:center;
+        flex:1; gap:12px; padding:40px; font-family:var(--ff-mono); color:var(--danger);
+        text-align:center;
+      ">
+        <div style="font-size:28px">⚠</div>
+        <div style="font-size:14px; font-weight:600;">Failed to load data</div>
+        <div style="font-size:12px; color:var(--muted); max-width:420px;">
+          Could not read <code>data/establishments.csv</code> or <code>data/samples.csv</code>.
+          Make sure you are serving the project from a local HTTP server — opening
+          <code>index.html</code> directly via <code>file://</code> will block CSV requests.
+        </div>
+        <div style="font-size:11px; color:var(--muted);">${err.message || err}</div>
+      </div>`;
+    return;
+  }
+
   initMap();
   renderRankings();
+  renderInsights();
   renderCorpBreakdown();
 });

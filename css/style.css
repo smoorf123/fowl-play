@@ -166,12 +166,12 @@ html, body {
 .pill:hover { border-color: var(--text); color: var(--text); }
 
 /* Active states – product type */
-.pill.active[data-v="all"]        { background: #444;     color: #fff; border-color: transparent; }
-.pill.active[data-v="Broilers"]   { background: #1565C0;  color: #fff; border-color: transparent; }
-.pill.active[data-v="Comminuted"] { background: #6a1b9a;  color: #fff; border-color: transparent; }
-.pill.active[data-v="Ground"]     { background: #bf360c;  color: #fff; border-color: transparent; }
-.pill.active[data-v="Parts"]      { background: #1b5e20;  color: #fff; border-color: transparent; }
-.pill.active[data-v="Whole"]      { background: #e65100;  color: #fff; border-color: transparent; }
+.pill.active[data-v="all"]     { background: #444;    color: #fff; border-color: transparent; }
+.pill.active[data-v="Chicken"] { background: #1565C0; color: #fff; border-color: transparent; }
+.pill.active[data-v="Turkey"]  { background: #6a1b9a; color: #fff; border-color: transparent; }
+.pill.active[data-v="Whole"]   { background: #e65100; color: #fff; border-color: transparent; }
+.pill.active[data-v="Parts"]   { background: #1b5e20; color: #fff; border-color: transparent; }
+.pill.active[data-v="Ground"]  { background: #bf360c; color: #fff; border-color: transparent; }
 
 /* Active states – corporate */
 .pill.active[data-c="all"]                { background: #444;    color: #fff; border-color: transparent; }
@@ -365,7 +365,7 @@ html, body {
   font-size: 10px;
   font-family: var(--ff-mono);
 }
-.history-bar-year  { width: 32px; color: var(--muted); text-align: right; flex-shrink: 0; }
+.history-bar-year  { width: 52px; color: var(--muted); text-align: right; flex-shrink: 0; }
 .history-bar-track { flex: 1; height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
 .history-bar-fill  { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
 .history-bar-val   { width: 34px; text-align: right; color: var(--muted); }
@@ -392,10 +392,11 @@ html, body {
   overflow: hidden;
   background: var(--bg);
 }
-#fp-net-view.active { display: flex; align-items: stretch; }
+#fp-net-view.active { display: flex; flex-direction: column; }
 #fp-net-svg {
+  flex: 1;
   width: 100%;
-  height: 100%;
+  min-height: 0;
 }
 .net-label {
   font-family: var(--ff-mono);
@@ -710,3 +711,98 @@ html, body {
 }
 .corp-avg-above { color: var(--danger); border-color: var(--danger); }
 .corp-avg-below { color: var(--safe);   border-color: var(--safe); }
+
+/* ── Network intro caption ────────────────────────────────── */
+#fp-net-intro {
+  padding: 10px 24px;
+  font-size: 12px;
+  font-family: var(--ff-mono);
+  color: var(--muted);
+  border-bottom: 0.5px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+  line-height: 1.6;
+}
+
+/* ── Key findings section ─────────────────────────────────── */
+#fp-insights {
+  padding: 24px 20px 20px;
+  border-top: 0.5px solid var(--border);
+  background: var(--bg);
+}
+
+#fp-insights-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+#fp-insights-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+#fp-insights-note {
+  font-size: 11px;
+  font-family: var(--ff-mono);
+  color: var(--muted);
+}
+
+#fp-insights-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.insight-card {
+  background: var(--bg2);
+  border: 0.5px solid var(--border2);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+}
+
+.insight-card-label {
+  font-size: 10px;
+  font-family: var(--ff-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.insight-card-body {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.insight-hi        { font-weight: 700; }
+.insight-hi.danger { color: var(--danger); }
+.insight-hi.safe   { color: var(--safe); }
+
+.insights-empty {
+  color: var(--muted);
+  font-family: var(--ff-mono);
+  font-size: 12px;
+  padding: 12px 0;
+}
+
+/* ── Attribution footer ───────────────────────────────────── */
+#fp-attribution {
+  padding: 14px 20px;
+  font-size: 11px;
+  font-family: var(--ff-mono);
+  color: var(--muted);
+  border-top: 0.5px solid var(--border);
+  background: var(--bg2);
+  text-align: center;
+  line-height: 1.8;
+}
+#fp-attribution a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#fp-attribution a:hover { color: var(--text); }

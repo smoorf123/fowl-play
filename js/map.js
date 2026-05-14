@@ -118,7 +118,7 @@ function showSidebar(p) {
   document.getElementById('sb-pos').textContent             = p.positives.toLocaleString();
   document.getElementById('sb-type').textContent            = p.type;
   document.getElementById('sb-state').textContent           = p.state;
-  document.getElementById('sb-years').textContent           = '2000–2020';
+  document.getElementById('sb-years').textContent           = p.dateRange || 'Jun 2020–Aug 2021';
 
   const rPct = (p.rate * 100).toFixed(1) + '%';
   const rEl  = document.getElementById('sb-rate');
@@ -143,14 +143,18 @@ function showSidebar(p) {
   vsEl.textContent = (diff >= 0 ? '+' : '') + (diff * 100).toFixed(1) + '%';
   vsEl.className   = 'stat-val ' + (diff > 0.05 ? 'danger' : diff < -0.03 ? 'safe' : 'caution');
 
-  /* Trend: compare first vs last 5-yr period */
-  const firstRate = p.history[0].positives / p.history[0].samples;
-  const lastRate  = p.history[p.history.length - 1].positives / p.history[p.history.length - 1].samples;
-  const delta     = lastRate - firstRate;
-  const trendEl   = document.getElementById('sb-trend');
-  if      (delta >  0.03) { trendEl.textContent = '▲ Worsening'; trendEl.className = 'stat-val danger'; }
-  else if (delta < -0.03) { trendEl.textContent = '▼ Improving'; trendEl.className = 'stat-val safe'; }
-  else                    { trendEl.textContent = '● Stable';     trendEl.className = 'stat-val'; }
+  /* Trend: compare first vs last quarter */
+  const trendEl = document.getElementById('sb-trend');
+  if (p.history.length >= 2) {
+    const firstRate = p.history[0].positives / p.history[0].samples;
+    const lastRate  = p.history[p.history.length - 1].positives / p.history[p.history.length - 1].samples;
+    const delta     = lastRate - firstRate;
+    if      (delta >  0.03) { trendEl.textContent = '▲ Worsening'; trendEl.className = 'stat-val danger'; }
+    else if (delta < -0.03) { trendEl.textContent = '▼ Improving'; trendEl.className = 'stat-val safe'; }
+    else                    { trendEl.textContent = '● Stable';     trendEl.className = 'stat-val'; }
+  } else {
+    trendEl.textContent = '— N/A'; trendEl.className = 'stat-val';
+  }
 
   /* History mini-bars */
   const bars    = document.getElementById('sb-history-bars');
