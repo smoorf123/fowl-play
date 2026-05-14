@@ -1,13 +1,10 @@
 /* ============================================================
    data.js  –  Plant dataset + utility helpers
    ============================================================
-   To swap in the real ProPublica dataset:
-     1. Parse the CSV (e.g. with d3.csv or Papa Parse).
-     2. Aggregate to plant-level: one object per establishment
-        with fields: name, state, lat, lng, corp, type,
-        samples (total test count), positives (positive count).
-     3. Replace PLANTS below with the aggregated array and call
-        addDerivedFields(PLANTS) on it.
+   Loads real ProPublica USDA poultry plant data:
+     1. Parses CSV files (establishments, samples)
+     2. Aggregates samples to plant-level
+     3. Calculates positivity rates and derives corporate mappings
    ============================================================ */
 
 'use strict';
@@ -30,7 +27,75 @@ function rateColor(r) {
   return '#7b1fa2';                  // severe
 }
 
-/* ── Per-plant history generator ────────────────────────────── */
+/* ── Corporate parent mapping ──────────────────────────────– */
+function mapCorporateParent(name, dba) {
+  const fullStr = (name + ' ' + (dba || '')).toLowerCase();
+  
+  if (fullStr.includes('tyson')) return 'Tyson';
+  if (fullStr.includes("pilgrim")) return "Pilgrim's Pride";
+  if (fullStr.includes('perdue')) return 'Perdue';
+  if (fullStr.includes('sanderson')) return 'Sanderson';
+  if (fullStr.includes('wayne')) return 'Wayne Farms';
+  
+  return 'Independent';
+}
+
+/* ── Poultry type normalization ────────────────────────────– */
+function normalizePoultryType(typeStr) {
+  if (!typeStr) return 'Mixed';
+  const t = typeStr.toLowerCase();
+  
+  // Extract base product type (Chicken vs Turkey)
+  let baseType = 'Chicken';
+  if (t.includes('turkey')) baseType = 'Turkey';
+  
+  // Extract preparation type
+  let prepType = 'Mixed';
+  if (t.includes('whole')) prepType = 'Whole';
+  else if (t.includes('part')) prepType = 'Parts';
+  else if (t.includes('ground')) prepType = 'Ground';
+  
+  // Return combined type (e.g., "Chicken Parts" or "Turkey Ground")
+  return `${baseType} ${prepType}`;
+}
+
+/* ── Simple geocoding fallback (state centroids) ────────────– */
+const STATE_COORDS = {
+  'AL': [32.87, -86.88], 'AK': [64.07, -152.28], 'AZ': [33.73, -111.43],
+  'AR': [34.97, -92.37], 'CA': [36.12, -119.68], 'CO': [39.06, -105.31],
+  'CT': [41.60, -72.75], 'DE': [39.00, -75.47], 'FL': [27.99, -81.76],
+  'GA': [33.04, -83.64], 'HI': [21.31, -157.86], 'ID': [44.24, -114.48],
+  'IL': [40.35, -88.99], 'IN': [39.85, -86.26], 'IA': [42.01, -93.21],
+  'KS': [38.53, -96.73], 'KY': [37.67, -84.67], 'LA': [31.17, -91.87],
+  'ME': [44.69, -69.38], 'MD': [39.06, -76.80], 'MA': [42.23, -71.53],
+  'MI': [43.33, -84.54], 'MN': [45.69, -93.90], 'MS': [32.74, -89.68],
+  'MO': [38.46, -92.29], 'MT': [46.92, -109.63], 'NE': [41.49, -99.90],
+  'NV': [38.80, -117.06], 'NH': [43.45, -71.56], 'NJ': [40.23, -74.46],
+  'NM': [34.84, -106.25], 'NY': [42.17, -74.95], 'NC': [35.63, -79.81],
+  'ND': [47.53, -99.79], 'OH': [40.39, -82.76], 'OK': [35.57, -97.49],
+  'OR': [44.57, -122.07], 'PA': [40.59, -77.21], 'RI': [41.68, -71.51],
+  'SC': [34.00, -81.16], 'SD': [44.30, -99.44], 'TN': [35.75, -86.69],
+  'TX': [31.97, -99.90], 'UT': [39.32, -111.09], 'VT': [44.05, -72.71],
+  'VA': [37.77, -78.17], 'WA': [47.75, -120.74], 'WV': [38.49, -80.95],
+  'WI': [44.27, -89.62], 'WY': [42.76, -107.30]
+};
+
+/* ── Approximates lat/lng from address (state-based fallback) ──– */
+function geocodeAddress(city, state, zip) {
+  // Basic approximation: state center + small random jitter
+  if (!state || state.length !== 2) return null;
+  const coords = STATE_COORDS[state.toUpperCase()];
+  if (!coords) return null;
+  
+  // Add small jitter to spread plants within state
+  const jitter = 1.5;
+  return [
+    coords[0] + (Math.random() - 0.5) * jitter,
+    coords[1] + (Math.random() - 0.5) * jitter
+  ];
+}
+
+/* ── Per-plant history generator ────────────────────────────– */
 function makeHistory(totalSamples, totalPositives) {
   const periods  = ['00–04', '05–09', '10–14', '15–20'];
   const weights  = [0.18, 0.22, 0.26, 0.34];
@@ -51,7 +116,7 @@ function makeHistory(totalSamples, totalPositives) {
   return history;
 }
 
-/* ── Add derived fields ──────────────────────────────────────── */
+/* ── Add derived fields ──────────────────────────────────────– */
 function addDerivedFields(arr) {
   arr.forEach(p => {
     p.rate    = p.positives / p.samples;
@@ -60,9 +125,81 @@ function addDerivedFields(arr) {
   return arr;
 }
 
-/* ── Raw plant records (72 mock plants) ─────────────────────── */
-/* Fields: id, name, state, lat, lng, corp, type, samples, positives */
-const PLANTS = addDerivedFields([
+/* ── Load and aggregate real CSV data ─────────────────────────– */
+let PLANTS = [];
+
+async function loadPlantData() {
+  try {
+    // Load both CSV files
+    const establishments = await d3.csv('data/establishments.csv');
+    const samples = await d3.csv('data/samples.csv');
+    
+    // Aggregate samples by establishment
+    const samplesByPlant = {};
+    samples.forEach(row => {
+      const estId = row.poultry_establishment_id;
+      if (!samplesByPlant[estId]) {
+        samplesByPlant[estId] = { total: 0, positive: 0, types: new Set() };
+      }
+      samplesByPlant[estId].total += 1;
+      if (row.result === 'true' || row.result === true) {
+        samplesByPlant[estId].positive += 1;
+      }
+      if (row.poultry_type) {
+        samplesByPlant[estId].types.add(normalizePoultryType(row.poultry_type));
+      }
+    });
+    
+    // Build plant records from establishments with samples
+    let plantId = 0;
+    const plants = establishments
+      .filter(est => samplesByPlant[est.poultry_establishment_id])
+      .map(est => {
+        const estId = est.poultry_establishment_id;
+        const stats = samplesByPlant[estId];
+        const coords = geocodeAddress(est.city, est.state, est.zip);
+        
+        // Determine predominant type
+        let type = 'Mixed';
+        if (stats.types.size === 1) {
+          type = Array.from(stats.types)[0];
+        }
+        
+        return {
+          id: plantId++,
+          name: est.name || 'Unknown Plant',
+          state: est.state,
+          lat: coords ? coords[0] : 40,
+          lng: coords ? coords[1] : -95,
+          corp: mapCorporateParent(est.name, est.dba),
+          type: type,
+          samples: stats.total,
+          positives: stats.positive,
+          city: est.city,
+          zip: est.zip,
+          address: est.address,
+          dba: est.dba
+        };
+      });
+    
+    // Add derived fields
+    addDerivedFields(plants);
+    
+    PLANTS = plants;
+    console.log(`Loaded ${PLANTS.length} plants with ${samples.length} samples`);
+    
+    return PLANTS;
+  } catch (err) {
+    console.error('Error loading plant data:', err);
+    // Fallback: use mock data
+    return loadMockPlants();
+  }
+}
+
+/* ── Fallback: mock plants if CSV load fails ──────────────────– */
+function loadMockPlants() {
+  console.warn('Using mock data as fallback');
+  return addDerivedFields([
   /* ── Arkansas – Tyson heartland ── */
   { id:1,  name:'Tyson Foods – Springdale',      state:'AR', lat:36.19, lng:-94.13, corp:'Tyson',           type:'Broilers',   samples:820, positives:148 },
   { id:2,  name:'Tyson Foods – Rogers',           state:'AR', lat:36.33, lng:-94.12, corp:'Tyson',           type:'Parts',      samples:610, positives:73  },
@@ -184,4 +321,5 @@ const PLANTS = addDerivedFields([
   /* ── Illinois ── */
   { id:64, name:'Perdue Farms – Bridgeport',      state:'IL', lat:38.71, lng:-87.76, corp:'Perdue',          type:'Parts',      samples:360, positives:29  },
   { id:65, name:'Tyson Foods – Chicago',          state:'IL', lat:41.88, lng:-87.63, corp:'Tyson',           type:'Ground',     samples:440, positives:66  },
-]);
+  ]);
+}

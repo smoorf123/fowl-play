@@ -14,10 +14,19 @@ let sortAsc  = false;
 
 /* Exported to map.js / network.js via global scope */
 function filteredPlants() {
-  return PLANTS.filter(p =>
-    (typeFilter === 'all' || p.type === typeFilter) &&
-    (corpFilter === 'all' || p.corp === corpFilter)
-  );
+  return PLANTS.filter(p => {
+    // Type filter: check if filter matches plant type
+    let typeMatch = true;
+    if (typeFilter !== 'all') {
+      // Match filters: "Chicken", "Turkey", "Whole", "Parts", "Ground"
+      typeMatch = p.type.toLowerCase().includes(typeFilter.toLowerCase());
+    }
+    
+    // Corp filter
+    const corpMatch = corpFilter === 'all' || p.corp === corpFilter;
+    
+    return typeMatch && corpMatch;
+  });
 }
 
 /* ── Filter setters ─────────────────────────────────────────── */
@@ -167,11 +176,18 @@ function renderCorpBreakdown() {
     const totalS = d3.sum(ps, p => p.samples);
     const totalP = d3.sum(ps, p => p.positives);
     return { corp, rate: totalP / totalS, samples: totalS, count: ps.length };
-  }).sort((a, b) => b.rate - a.rate);
+  })
+    .filter(c => c.corp !== 'Independent')  // Exclude Independent
+    .sort((a, b) => b.rate - a.rate);
 
   const maxRate = d3.max(corps, c => c.rate) || 1;
   const container = document.getElementById('fp-corp-bars');
   container.innerHTML = '';
+
+  if (corps.length === 0) {
+    container.innerHTML = '<p style="text-align:center;color:#999;padding:20px">No data for selected filters</p>';
+    return;
+  }
 
   corps.forEach(c => {
     const corpCol  = CORP_COLORS[c.corp] || '#888';
@@ -202,10 +218,13 @@ function renderCorpBreakdown() {
 }
 
 /* ── Bootstrap ──────────────────────────────────────────────── */
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   /* Map starts visible */
   document.getElementById('fp-map-view').style.display = 'flex';
   document.getElementById('fp-net-view').style.display  = 'none';
+  
+  /* Load real data, then render */
+  await loadPlantData();
   initMap();
   renderRankings();
   renderCorpBreakdown();

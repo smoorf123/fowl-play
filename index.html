@@ -26,13 +26,13 @@
       <span class="filter-label">Product</span>
       <div class="filter-pills" id="pills-type" role="group" aria-label="Product type filter">
         <button class="pill active" data-v="all"         onclick="setTypeFilter('all')">All</button>
-        <button class="pill"        data-v="Broilers"    onclick="setTypeFilter('Broilers')">Broilers</button>
-        <button class="pill"        data-v="Comminuted"  onclick="setTypeFilter('Comminuted')">Comminuted</button>
-        <button class="pill"        data-v="Ground"      onclick="setTypeFilter('Ground')">Ground</button>
-        <button class="pill"        data-v="Parts"       onclick="setTypeFilter('Parts')">Parts</button>
+        <button class="pill"        data-v="Chicken"     onclick="setTypeFilter('Chicken')">Chicken</button>
+        <button class="pill"        data-v="Turkey"      onclick="setTypeFilter('Turkey')">Turkey</button>
         <button class="pill"        data-v="Whole"       onclick="setTypeFilter('Whole')">Whole</button>
+        <button class="pill"        data-v="Parts"       onclick="setTypeFilter('Parts')">Parts</button>
+        <button class="pill"        data-v="Ground"      onclick="setTypeFilter('Ground')">Ground</button>
       </div>
-      <span class="filter-label" style="margin-left:8px">Corp.</span>
+      <span class="filter-label" style="margin-left:8px">Major Corps.</span>
       <div class="filter-pills" id="pills-corp" role="group" aria-label="Corporate parent filter">
         <button class="pill active" data-c="all"               onclick="setCorpFilter('all')">All</button>
         <button class="pill"        data-c="Tyson"             onclick="setCorpFilter('Tyson')">Tyson</button>
@@ -40,7 +40,6 @@
         <button class="pill"        data-c="Pilgrim's Pride"   onclick="setCorpFilter(&quot;Pilgrim's Pride&quot;)">Pilgrim's</button>
         <button class="pill"        data-c="Sanderson"         onclick="setCorpFilter('Sanderson')">Sanderson</button>
         <button class="pill"        data-c="Wayne Farms"       onclick="setCorpFilter('Wayne Farms')">Wayne</button>
-        <button class="pill"        data-c="Independent"       onclick="setCorpFilter('Independent')">Indep.</button>
       </div>
     </section>
 
@@ -169,8 +168,8 @@
 
     <!-- CORPORATE BREAKDOWN -->
     <section id="fp-corp-breakdown" aria-label="Corporate breakdown">
-      <h2>Corporate Breakdown</h2>
-      <p class="breakdown-subtitle">Aggregated by parent company · sorted by positivity rate · relative bar = share of max</p>
+      <h2>Major Corporations Comparison</h2>
+      <p class="breakdown-subtitle">Major corporations only · sorted by salmonella positivity rate · bars show % positive tests</p>
       <div id="fp-corp-bars"></div>
     </section>
 

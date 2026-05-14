@@ -26,15 +26,28 @@ function renderNetwork() {
   const H = svgEl.clientHeight || 520;
   netSvg.attr('viewBox', `0 0 ${W} ${H}`);
 
-  /* ── Aggregate by corp ── */
+  /* ── Aggregate by corp (exclude Independent) ── */
   const corpGroups = d3.group(plants, p => p.corp);
   const corpData   = Array.from(corpGroups, ([corp, ps]) => {
     const totalS = d3.sum(ps, p => p.samples);
     const totalP = d3.sum(ps, p => p.positives);
     return { corp, plants: ps, rate: totalP / totalS, samples: totalS, count: ps.length };
-  }).sort((a, b) => b.samples - a.samples);
+  })
+    .filter(c => c.corp !== 'Independent')  // Exclude Independent from network
+    .sort((a, b) => b.samples - a.samples);
 
   const n = corpData.length;
+
+  if (n === 0) {
+    netSvg.append('text')
+      .attr('x', 450).attr('y', 260)
+      .attr('text-anchor', 'middle')
+      .attr('font-family', 'monospace')
+      .attr('font-size', 14)
+      .attr('fill', '#999')
+      .text('No major corporations match the current filters');
+    return;
+  }
 
   /* ── Scales ── */
   const maxSamples   = d3.max(corpData, c => c.samples) || 1;
@@ -42,9 +55,9 @@ function renderNetwork() {
   const corpRadius   = d3.scaleSqrt().domain([0, maxSamples]).range([20, 50]);
   const plantRadius  = d3.scaleSqrt().domain([0, maxPlantSamp]).range([4, 10]);
 
-  /* ── Industry average ── */
-  const allSamples  = d3.sum(plants, p => p.samples);
-  const allPos      = d3.sum(plants, p => p.positives);
+  /* ── Industry average (major corps only) ── */
+  const allSamples  = d3.sum(corpData, c => c.samples);
+  const allPos      = d3.sum(corpData, c => c.count * (c.rate));
   const industryAvg = allSamples > 0 ? allPos / allSamples : 0;
 
   /* ── Layout geometry ── */

@@ -1,0 +1,604 @@
+poultry_establishment_id,full_establishment_id,name,address,city,state,zip,grant_date,activities,dba,district,circuit,establishment_size,processed_volume_category,slaughter_volume_category,active
+P1,M7478 + P1,Tyson Foods,704 Factory Street,Wilkesboro,NC,28697,,"Poultry Processing, Poultry Slaughter","Tyson Farms, Inc.",80,8007,Large,5,5,true
+P10017,M10017 + P10017,Bert Hazekamp & Son,3933 South Brooks Road,Muskegon,MI,49444,,"Meat Processing, Poultry Processing",Hazekamp Meats; Hazekamp Wholesale Meats,50,5009,Small,4,,true
+P1009,P1009,Wayne Farms,2301 East 8th Street,Danville,AR,72833,2019-02-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",35,3514,Large,5,5,true
+P1015,M1015 + P1015,Table Trust Brands,247 Empire Drive,Mifflintown,PA,17059,,"Meat Processing, Poultry Processing, Poultry Slaughter",Alle; Empire Kosher; Galil; Kosher Valley,60,6005,Large,5,5,true
+P1049,M751 + P1049,Pitman Farms (Moroni Turkey Processing),350 South 300 West,Moroni,UT,84646,,"Meat Processing, Poultry Processing, Poultry Slaughter","Norbest, LLC; Pitman Farms Utah Division",15,1532,Small,5,4,true
+P1096A,P1096A,VPGC,6349 RAWLEY PIKE,HINTON,VA,22831,2009-04-05 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8008,Small,5,4,true
+P11078,M11078 + P11078,Commodity Sales,517 Clarence St,Los Angeles,CA,90033,1995-06-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,535,Small,3,,true
+P112,M112 + P112,Tyson Foods,601 Tyson Drive,Green Forest,AR,72638,2017-06-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Tyson Foods , Inc. M112/P112",35,3502,Large,5,5,true
+P1137,P1137,Tyson Foods,1200 West Kingsbury Street,Seguin,TX,78155,,"Poultry Processing, Poultry Slaughter","TSD Sales and Distribution; Tyson Farms, Inc.; Tyson Fresh Meats",40,4040,Large,5,5,true
+P11507,M11507 + P11507 + V11507,Perdue Foods,2300 Industrial Dr,Monterey,TN,38574,2018-10-12 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Slaughter - Meat, Voluntary Slaughter - Poultry",Chef - Quik; Coleman Natural Foods; Gol-Pak; Harvestland,90,9027,Large,4,,true
+P11509,M11509 + P11509,OK Foods,130 Quality Drive,Albertville,AL,35950,,"Meat Processing, Poultry Processing",Bachoco,90,9012,Small,4,,true
+P1174,P1174 + V1174,RCF,641 Holly Street NE,Decatur,AL,35601,,"Identification - Poultry, Poultry Processing",Gemstone Foods LLC,90,9010,Small,3,,true
+P1174B,P1174B,Gemstone Foods,805 MCENTIRE ROAD,DECATUR,AL,35601,,Poultry Processing,"",90,9010,Small,4,,true
+P1201,P1201,Pilgrim's Pride,484 Zimmerman Road,Sanford,NC,27330,,"Poultry Processing, Poultry Slaughter","",80,8010,Large,5,5,true
+P1209,P1209,Whitewater Processing,10964 Campbell Rd,Harrison,OH,45030,2002-06-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",50,5022,Small,3,4,true
+P1234,M1234 + P1234,Mountaire Farms,1101 East Third Street,Siler City,NC,27344,,"Meat Processing, Poultry Processing, Poultry Slaughter",Mountaire Farms of North Carolina Corp.,80,8010,Large,5,5,true
+P1235,P1235,Wayne Farms,254 Ipsco Road,Decatur,AL,35601,,"Poultry Processing, Poultry Slaughter",Dutch Quality; Wayne Farms,90,9010,Large,5,5,true
+P1241,P1241,Tyson Foods,545 Valley Road,Corydon,IN,47112,2019-03-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","TSD Sales and Distribution, Inc.; Tyson Chicken, Inc.",50,5031,Small,5,5,true
+P1243,P1243,Perdue Foods,416 S. Long Drive,Rockingham,NC,28379,2021-01-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Carolina Fare; Cookin Good; Greenwise; Harvestland; Nature's Promise; Open Nature; Perdue; Shenandoah ; Shoreline ; Sprout's; Trader Joe's,80,8003,Large,5,5,true
+P1249,P1249,George's Chicken,19992 Senedo Rd.,Edinburg,VA,22824,,"Poultry Processing, Poultry Slaughter","",80,8014,Large,5,5,true
+P1250,P1250,Fieldale Farms,2115 Industrial Blvd.,Cornelia,GA,30531,2015-11-02 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Springer Mountain Farms,85,8503,Large,5,5,true
+P1254,P1254 + V1254,Koch Foods,515 Tyson Rd,Ashland,AL,36251,,"Certification - Export, Poultry Processing, Poultry Slaughter","",90,9001,Small,5,5,true
+P1257,P1257,Fieldale Farms,5163 Thompson Bridge Road,Murrayville,GA,30564,,"Poultry Processing, Poultry Slaughter",Springer Mountain Farms,85,8513,Large,4,5,true
+P12650,M12650 + P12650,Fieldale Farms,1540 Monroe Drive,Gainesville,GA,30507,,"Meat Processing, Poultry Processing",Springer Mountain Farms,85,8513,Large,5,,true
+P1272,P1272,Pilgrim's Pride,113 McNeil Drive,Douglas,GA,31533,,"Poultry Processing, Poultry Slaughter","",85,8509,Large,5,5,true
+P1284,P1284,Pilgrim's Pride,654 Univeter Road,Canton,GA,30115,,"Poultry Processing, Poultry Slaughter","",85,8507,Large,5,5,true
+P1294,P1294 + V1294,Holmes Foods,101 South Liberty Avenue,Nixon,TX,78140,,"Certification - Export, Poultry Processing, Poultry Slaughter","",40,4030,Small,5,5,true
+P1304,P1304,Farmers Pride,154 W. Main Street,Fredericksburg,PA,17026,,"Poultry Processing, Poultry Slaughter",Bell & Evans,60,6023,Large,5,5,true
+P1304A,P1304A,Farmers Pride,2929 US Route 22,Fredericksburg,PA,17026,,Poultry Processing,Bell & Evans,60,6023,Large,4,,true
+P1305,M1305 + P1305 + V1305,Holly Poultry,2121 Wicomico Street,Baltimore,MD,21230,2018-04-12 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing","",80,8014,Small,4,,true
+P1307,P1307,Mar-Jac Poultry-AL,3301 3rd Avenue,Jasper,AL,35501,,"Poultry Processing, Poultry Slaughter",Mar-Jac Poultry - AL,90,9001,Large,5,5,true
+P1309,P1309,House of Raeford Farms,1354 Rutherford Rd.,Greenville,SC,29609,2015-01-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",85,8521,Large,5,5,true
+P1315,P1315,Tyson Foods,800 County Road,Monett,MO,65708,2021-06-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Tyson Poultry, Inc.",35,3502,Large,5,5,true
+P1317,P1317 + V1317,Wayne Farms,700 McDonald Avenue,Albertville,AL,35950,,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","",90,9012,Large,5,5,true
+P1318,P1318,Perdue Foods,255 N. Rehoboth Blvd.,Milford,DE,19963,,"Poultry Processing, Poultry Slaughter",Coleman Natural Foods,80,8004,Large,5,5,true
+P13199,M13199 + P13199,Chorizo de San Manuel,36080 North Highway 281,Edinburg,TX,78542,,"Meat Processing, Poultry Processing",Valley Institutional Foods Co. (VIFCO),40,4031,Small,3,,false
+P1325,M9977 + P1325,Tyson Foods,403 S. Custer Avenue,New Holland,PA,17557,,"Meat Processing, Poultry Processing, Poultry Slaughter","Hudson Foods, Inc.; TSD Sales and Distribution; Tyson Poultry, Inc.; Victor F. Weaver Co.",60,6023,Large,5,5,true
+P13369,P13369 + V13369,George's Processing,9066 State Hwy W,Cassville,MO,65625,,"Poultry Processing, Poultry Slaughter","",35,3502,Large,5,5,true
+P134,M7559 + P134,David Elliot Poultry Farm,300 Breck Street,Scranton,PA,18505,2020-05-02 00:00:00 UTC,"Meat Processing, Poultry Processing, Poultry Slaughter",Kee-Tov,60,6014,Small,4,4,true
+P13432,M13432 + P13432,Martin Preferred Foods,2002 White Street,Houston,TX,77007,2020-06-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4026,Small,3,,true
+P13432A,M13432A + P13432A,Martin Preferred Foods,2017 White Street,Houston,TX,77007,,Poultry Processing,"",40,4026,Small,4,,true
+P13456,M13456 + P13456 + V13456,Tyson Foods,5505 Jefferson Parkway,Pine Bluff,AR,71602,,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter","Arkie Chicken; Brennan Packing, Inc.; Carroll County; Cavanaugh Lakeview Farms; Choctaw Maid; Colonia; Delightful Farms; Delta Valley; Eastwood Foods; Gold Leaf; Greenwich; Holly Farms; Howard County; Hudson Foods, Inc.; Janet Davis; Lady Aster (Food Service); McCarty Foods; Ole Carolina Brand & Design; Patti Jean; Prospect Farms; Spare Time; Tyson; Victor F. Weaver Co.; Washington Creamery",35,3520,Large,5,5,true
+P13484,M13484 + P13484,Direct Source Meats,4424 Dividend Dr,San Antonio,TX,78219,,"Meat Processing, Poultry Processing","",40,4040,Small,3,,true
+P1353,P1353,Pilgrim's Pride,1591 Broad Street,Chattanooga,TN,37408,,"Poultry Processing, Poultry Slaughter",Country Pride; Rockingham; To-Ricos,90,9027,Small,5,5,true
+P13530,M13530 + P13530,Tian Tian Food Service,1515 Hebert Street,Houston,TX,77012,2005-12-12 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4032,Very Small,3,,true
+P13556,M13556 + P13556,Tyson Foods,19571 Whitfield Road,Sedalia,MO,65301,,"Meat Processing, Poultry Processing, Poultry Slaughter","Prospect Farms; TSD Sales and Distribution; Tyson Poultry, Inc.",35,3508,Large,5,5,true
+P13564,M13564 + P13564,Rath,908 E. Apache Trail Rd.,Apache,OK,73006,,"Meat Processing, Poultry Processing","",40,4043,Very Small,2,,true
+P13584,P13584 + V13584,George's Processing,701 Porter Avenue,Springdale,AR,72764,,"Certification - Export, Poultry Processing","",35,3512,Large,5,,true
+P13590,M13590 + P13590,Southwest Processor,12714 Royal Drive,Stafford,TX,77477,,"Meat Processing, Poultry Processing",KOT Corp.,40,4032,Very Small,4,,true
+P13598,M13598 + P13598,Golden Duck Meat & Poultry,2619 Texas,Houston,TX,77003,,"Meat Processing, Poultry Processing","",40,4026,Very Small,2,,true
+P1362,P1362,Tyson Foods,One Tyson Avenue,Noel,MO,64854,2018-02-10 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Delightful Farms; Gold Leaf; Hudson; Tyson Chicken, Inc.",35,3518,Large,5,5,true
+P1392,M1392 + P1392,Dudley Poultry Company,910  Route 245,Middlesex,NY,14507,2018-05-04 00:00:00 UTC,"Meat Processing, Poultry Processing",Finger Lakes Brand,60,6028,Small,4,,true
+P146,P146,Tyson Foods,13264 Mountain Road,Glen Allen,VA,23059,,"Poultry Processing, Poultry Slaughter","Tyson Farms, Inc.; Tyson Foods,Inc",80,8019,Large,5,5,true
+P1480,P1480,Tip Top Poultry,327 Wallace Rd.,Marietta,GA,30065,,"Poultry Processing, Poultry Slaughter","",85,8507,Large,4,5,true
+P1525,P1525,Samuel Holmes,56 Garden Street,Everett,MA,02149,2021-10-06 00:00:00 UTC,Poultry Processing,N.B.P. (New Boston Poultry),60,6008,Small,3,,true
+P1542,M1542 + P1542,Isernio's Sausage,8222 South 228th Street,Kent,WA,98032,,"Meat Processing, Poultry Processing",Fletcher's Fine Foods,15,1526,Small,3,,true
+P157,M18909 + P157,Foster Farms,500 F Street,Turlock,CA,95380,,"Poultry Processing, Poultry Slaughter",Costal Range; Fircrest; Sierra Farms; Sunland; Valbest Farms; Valchris Farms,5,508,Large,5,4,true
+P15724,P15724,Case Farms Processing,1818 County Road 160,Winesburg,OH,44690,,"Poultry Processing, Poultry Slaughter","",50,5011,Small,4,5,true
+P15735,M15735 + P15735 + V15735,Fulton Troika,4501 W. Ann Lurie Place,Chicago,IL,60632,,"Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat",Fulton Market; Sam's Meat Co.,50,5002,Small,3,,true
+P15805,M15805 + P15805 + V15805,J&B Wholesale Distributing,13200 43rd St. NE,St Michael,MN,55376,2021-01-04 00:00:00 UTC,"Certification - Export, Certification - Trichinae, Identification - Meat, Identification - Poultry, Meat Processing, Off-Premise Freezing - Egg Products, Off-Premise Freezing - Meat, Off-Premise Freez","J&B Group; J&B Group, Inc.; J&B Wholesale Distributing Inc.",25,2504,Small,4,,true
+P15841,M15841 + P15841,DiRusso's Sausage,1035 Rayen Ave,Youngstown,OH,44502,1993-06-07 00:00:00 UTC,"Meat Processing, Poultry Processing","",50,5021,Very Small,3,,true
+P164,P164,Tyson Foods,1225 Jack Lee Drive,Forest,MS,39074,,"Poultry Processing, Poultry Slaughter",Choctaw Maid Farms; Tyson Foods Inc,90,9024,Large,5,5,true
+P165H,P165H,OK Foods,200 Industrial Road,Heavener,OK,74937,,"Poultry Processing, Poultry Slaughter","",40,4043,Large,5,5,true
+P165M,P165M + V165M,OK Foods,100 Wilson Rock Road North,Muldrow,OK,74948,,"Certification - Export, Poultry Processing",Spring River Farms; Tenderbird,35,3505,Small,5,,true
+P165S,P165S + V165S,OK Foods,3921 Reed Lane,Fort Smith,AR,72904,,"Certification - Export, Poultry Processing, Poultry Slaughter","",35,3505,Large,5,5,true
+P170,P170,Wayne Farms,977 Wayne Poultry Road,Pendergrass,GA,30567,,"Poultry Processing, Poultry Slaughter","",85,8517,Large,5,5,true
+P17065,M426 + P17065,King Meat Service,4215 Exchange Ave.,Vernon,CA,90058,2020-05-11 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,503,Small,3,,true
+P17124,M17124 + P17124,Prison Industry Authority/Mule Creek State Prison,4001 Hwy 104,Ione,CA,95640,,"Meat Processing, Poultry Processing","",5,509,Small,3,,true
+P17151,M17151 + P17151 + V17151,UW Provision Company,2315 Pleasant View Rd.,Middleton,WI,53562,2005-02-05 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat","",25,2530,Small,2,,false
+P17179,P17179,Avenal State Prison,Prison Industry Authority,Avenal,CA,93204,,Poultry Processing,"",5,512,Small,3,,true
+P17202A,M17202A + P17202A,Americold Logistics,2900 Murray Street,Sioux City,IA,51111,2020-01-04 00:00:00 UTC,"Meat Processing, Poultry Processing",Americold Farmers,25,2523,Small,4,,true
+P17335,M17335 + P17335,Intra Coastal Packing,3222 S. Military Trail,Lake Worth,FL,33463,,"Meat Processing, Poultry Processing","",85,8535,Small,2,,true
+P17336,P17336,Royal Poultry,90 LIBERA STREET,CRANSTON,RI,02920,1997-03-03 00:00:00 UTC,Poultry Processing,"",60,6029,Small,2,,true
+P17340,P17340,Pilgrim's Pride,2653 State Route 1241,Hickory,KY,42051,,"Poultry Processing, Poultry Slaughter",Country Pride; Just Bare; Pierce Foods; Pilgrim's,90,9006,Large,5,5,true
+P17375,M17375 + P17375,E.G. Food,5600 First Ave  B4N,Brooklyn,NY,11220,,Poultry Processing,G G Kosher Food Inc; Satmer Meats Inc,60,6024,Very Small,2,,true
+P17395,M17395 + P17395,50th State Poultry,98-715 Kuahao Place,Pearl City,HI,96782,2017-08-03 00:00:00 UTC,"Meat Processing, Poultry Processing","",15,1505,Very Small,3,,true
+P17480,M17480 + P17480,Ramar International,539 Garcia Ave,Pittsburg,CA,94565,2015-12-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,531,Small,4,,true
+P17500,P17500,Pilgrim's Pride,2045 Highway 244,Russellville,AL,35654,,"Poultry Processing, Poultry Slaughter","",90,9010,Large,5,5,true
+P17524,M17524 + P17524,Espi's Sausage and Tocino,29 S. Hanford St.,Seattle,WA,98134,,"Meat Processing, Poultry Processing","",15,1526,Very Small,2,,true
+P17557,M17557 + P17557,JPI Wholesalers,One Rooster Way,Barry,IL,62312,,"Meat Processing, Poultry Processing",Jones Poultry,50,5007,Very Small,4,,true
+P177,P177,Pilgrim's Pride,949 Industrial Blvd.,Gainesville,GA,30503,,"Poultry Processing, Poultry Slaughter",Chris P Chicken; CN (PPC Child Nutri); Country Pride; County Post; Eat Well Stay Healthy; Fryer Kist; GK for the Student; GoldKist; Goldkist; GoldKist Farms; Independence County; Oven Kist; Pierce Foods; PP Select; Ro-Ricos; Rockingham; Shenandoah Valley; Wampler Foods,85,8513,Large,5,5,true
+P17734,P17734,Stonewood Farm,105 Griswold Lane,Orwell,VT,05760,,"Poultry Processing, Poultry Slaughter","",60,6003,Very Small,4,3,true
+P17751,M17751 + P17751,Chamblee Meats & Supplies,5634-A New Peachtree Road,Chamblee,GA,30341,,"Meat Processing, Poultry Processing","",85,8517,Very Small,2,,true
+P17764,M1633 + P17764 + V1633,Abbyland Foods,508 E. Linden Street,Abbotsford,WI,54405,2017-08-12 00:00:00 UTC,"Meat Processing, Meat Slaughter, Poultry Processing, Voluntary Processing - Meat","Abbyland; Abbyland Foods; Abbyland, Inc.",25,2519,Large,5,3,true
+P17764A,M1633A + P17764A,Abbyland Foods,323 Plaza Drive,Curtiss,WI,54422,2017-08-12 00:00:00 UTC,"Meat Processing, Poultry Processing","",25,2519,Small,3,,true
+P17778,P17778,ENA Meat Packing,2-8 Warren Street,Paterson,NJ,07524,2009-09-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Senat Poultry LLC,80,8023,Small,3,4,true
+P17813,M3535 + P17813,Ashland Cold Storage,1556 W. 43rd Street,Chicago,IL,60609,,"Meat Processing, Poultry Processing","",50,5003,Small,4,,true
+P17966,P17966 + V17966,HVFG,80 Brooks Road,Ferndale,NY,12734,2020-07-04 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry",A.G.Y. Corporation; Hudson Valley Duck Farm; Hudson Valley Foie Gras,60,6027,Small,4,4,true
+P17967,M17967 + P17967,Los Altos Beef,6717 Alameda Street,Huntington Park,CA,90001,,"Meat Processing, Poultry Processing","",5,535,Small,4,,true
+P17980,M17980 + P17980,Pilgrim's Pride,2050 Highway 15 South,Sumter,SC,29150,,"Poultry Processing, Poultry Slaughter","",85,8522,Large,5,5,true
+P17990A,M17990A + P17990A,AVA Pork Products,383 West John Street,Hicksville,NY,11802,,"Meat Processing, Poultry Processing","",60,6017,Small,4,,true
+P18,P18,Cargill Meat Solutions,135 Huffman Drive,Dayton,VA,22821,2019-08-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Cargill Meat Solutions; Cargill Turkey and Cooked Meats; CARGILL VALUE ADDED MEATS,80,8008,Large,5,5,true
+P18123,M1790 + P18123 + V1790,Grecian Delight Foods,1201 Tonne Rd.,Elk Grove Village,IL,60007,2014-10-12 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing",A Pure Mediterranean Foods Company; Arturo's of Chicago; Mayhew Meats,50,5004,Small,4,,true
+P18178,M550 + P18178,Sterling Pacific Meat,6114 Scott Way,Commerce,CA,90040,2006-01-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,514,Small,4,,true
+P18263,M18263 + P18263,Gordo's,1591 Murphy Ave.,Atlanta,GA,30310,,"Meat Processing, Poultry Processing",Kashawa,85,8505,Very Small,1,,true
+P18285,P18285,Perdue Foods,2047 Highway 9 West,Dillon,SC,29536,2021-02-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Carolina Fare; Coleman Natural Foods; Draper Valley Farms; Harvestland; Shenandoah; Shoreline Country Corner,85,8522,Large,5,5,true
+P18388,M18388 + P18388,Kayem Foods,14 Industrial Parkway,Woburn,MA,01801,,"Meat Processing, Poultry Processing",Al Fresco; Genoa ; McKenzie Natural Artisan Deli,60,6008,Small,3,,true
+P18395,M2514 + P18395,Four Star Foods,2420 S. Wood St.,Chicago,IL,60608,,"Meat Processing, Poultry Processing","",50,5002,Small,4,,true
+P18414,P18414,MB Consultants,5190  Main Street,South Fallsburg,NY,12779,,"Poultry Processing, Poultry Slaughter",Al-Maaedah; Ambassador Brand; As-Salaam Poultry; DeBragga; Maplecrest; Master Purveyors; Murray's Chicken; Murray's Pride; NEMA; Real Halal; Unique Country; Zabeeha,60,6027,Small,4,5,true
+P18438B,P18438B,Dupont Market,2716 E. Miner Avenue,Stockton,CA,95205,,"Poultry Processing, Poultry Slaughter",Grimaud Farms,5,509,Small,3,4,true
+P18491,P18491,Eastern Shore Poultry Company,21724 BROAD CREEK AVENUE,GEORGETOWN,DE,19947,,Poultry Processing,"",80,8017,Small,4,,true
+P18554,M18554 + P18554,JCG Industries,4404 W. Berteau Ave.,Chicago,IL,60641,2004-11-05 00:00:00 UTC,"Meat Processing, Poultry Processing","Koch Foods Co., Inc.; Koch Poultry Co Inc",50,5002,Large,4,,true
+P18554A,M18554A + P18554A,JCG Industries,2153 and 2155 Rose St.,Franklin Park,IL,60131,,"Meat Processing, Poultry Processing",Koch Foods,50,5002,Large,4,,true
+P18557,P18557,Sanderson Farms,4039 River Ridge Road,Summit,MS,39666,,"Poultry Processing, Poultry Slaughter",Covington Farms,90,9004,Large,5,5,true
+P18578,M18578 + P18578,Kelly's Foods,650 Carter Road,Winter Garden,FL,34787,,Poultry Processing,"",85,8527,Very Small,3,,true
+P18596,M18596 + P18596,K&L Ranch,204 Albion Avenue,Paterson,NJ,07502,,"Meat Processing, Poultry Processing",Love Farms LLC - Fed. #45-4924471,80,8023,Small,3,,true
+P18600,M18600 + P18600,Greco and Sons,1550 Hecht Drive,Bartlett,IL,60103,,"Meat Processing, Poultry Processing","",50,50,Small,3,,true
+P18678,M18678 + P18678 + V18678,Fells Point,2730 Wilmarco Ave.,Baltimore,MD,21223,2017-12-09 00:00:00 UTC,"Animal Foods Inspection, Meat Processing, Poultry Processing",Fells Point Wholesale Meats,80,8014,Small,3,,true
+P18726,M18726 + P18726,La Bella Sausage,16170 Aviation Loop Drive,Brooksville,FL,34604,,"Meat Processing, Poultry Processing","",85,8533,Small,3,,true
+P1874,M1874 + P1874,Mondo & Sons,1150 Andover Park East,Tukwila,WA,98188,,"Meat Processing, Poultry Processing",Petschl's Quality Meats,15,1526,Small,3,,true
+P18743,M18743 + P18743,Olympia Food Industries,9501 Nevada Ave.,Franklin Park,IL,60131,2016-07-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",50,5004,Small,4,,true
+P18863,P18863 + V18863,Peco Foods,559 West Main Street,Brooksville,MS,39739,,"Certification - Export, Off-Premise Freezing - Poultry, Poultry Processing, Poultry Slaughter","Peco Farms, Inc.; Peco Foods Inc.; Peco Foods of Mississippi Inc.",90,9024,Small,4,,true
+P1887,M1887 + P1887,Marcel's Portion Pak,4111 N.W. 132 St.,Opa-Locka,FL,33054,1983-10-01 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,8535,Very Small,2,,true
+P18873,P18873,Tyson Foods,1151 E. Pine Street,Vienna,GA,31092,,"Poultry Processing, Poultry Slaughter","Tyson Farms, Inc.",85,8501,Large,5,5,true
+P18895,M18895 + P18895,US Foods,12500 Inglewood Ave,Hawthorne,CA,90250,,"Certification - Export, Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry",FirstClass Foods Inc.,5,535,Small,4,,true
+P18978,P18978,Misty Knoll Farms,1685 Main Street,New Haven,VT,05472,2009-09-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",60,6026,Small,3,4,true
+P18994,M18994 + P18994,Macsei Industries,1784 E Vernon Ave.,Los Angeles,CA,90058,2001-05-12 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,535,Small,3,,true
+P190,M190 + P190 + V190,Jennie-O Turkey Store Sales,34 North 7th Street,Barron,WI,54812,,"Certification - Export, Identification - Poultry, Meat Processing, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","Festive Brand; Hormel Foods Corporation; Jennie-O; Jennie-O Foods, Inc.; Jennie-O Turkey Store, Inc.; Jerome Foods, Inc.; Jerome's Golden Glo; Norwestern Deli; The Turkey Store, Inc.; West Central Turkey's, LLC",25,2522,Large,5,4,true
+P19034,M19034 + P19034,Berk Lombardo Packing,50 Constance Court,Hauppauge,NY,11788,,"Meat Processing, Poultry Processing","",60,6017,Small,3,,true
+P19112,P19112,Perdue Foods,489 Cromwell Road,Cromwell,KY,42333,2020-04-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Coleman Natural Foods; Harvestland,90,9002,Large,5,5,true
+P19113,M19113 + P19113,Stampede Meat,7351 S. 78th Avenue,Bridge View,IL,60455,,"Meat Processing, Poultry Processing",Carlton Farms; Chef Inside The Box; Chicken Plus USA; Cro-Magnon; Meat Plus USA; Mission Hill Bistro; Pork Plus USA; Silver Birch Farms; Silver Oak; Stampede Meat,50,5006,Large,5,,true
+P19113B,M19113B + P19113B,Stampede Meat,"7035 W. 65th Street, Unit B",Bedford Park,IL,60638,,"Meat Processing, Poultry Processing",Carlton Farms; Chef Inside The Box; Chicken Plus USA; Cro-Magnon; Meat Plus USA; Mission Hill Bistro; Pork Plus USA; Silver Birch Farms; Silver Oak; Stampede Meat,50,5006,Small,5,,true
+P19128,P19128,Case Farms of North Carolina,330 Pecan Road,Dudley,NC,28333,,"Poultry Processing, Poultry Slaughter",Case Farms,80,8015,Large,5,5,true
+P19150,P19150 + V19150,La Belle Farm,504 Stanton Corners Road,Ferndale,NY,12734,,"Certification - Export, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit","",60,6027,Small,3,4,true
+P19152,P19152 + V19152,Koch Foods,1620  Progress Parkway,Morristown,TN,37813,,"Poultry Processing, Poultry Slaughter","",90,9021,Large,5,,true
+P19194,M19194 + P19194,US Foods,4650 West Buckeye Road,Phoenix,AZ,85043,,"Meat Processing, Poultry Processing",Stock Yards Phoenix,5,504,Small,4,,true
+P19198,M19198 + P19198,Bakkavor Foods USA,2700 Westinghouse Blvd,Charlotte,NC,28273,2015-08-01 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,80,Small,3,,true
+P192,P192,Pilgrim's Pride,3500 Lake Guntersville Park Drive,Guntersville,AL,35976,2021-09-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Gold Kist; Gold Kist Farms; Kirkland's; Pilgrim's,90,9010,Large,5,5,true
+P19232,M19232 + P19232 + V19232,Bowman & Landes Turkeys,6490 E. Ross Rd,New Carlisle,OH,45344,2014-02-09 00:00:00 UTC,"Meat Processing, Poultry Processing, Poultry Slaughter","",50,5022,Small,1,3,true
+P19378,P19378,Koch Foods,221 Meadow Drive,Cumming,GA,30040,,Poultry Processing,Koch Foods of Cumming,85,8507,Large,5,,true
+P19433,M19433 + P19433,Ambassador Meat,2856 Guinotte,Kansas City,MO,64120,2015-09-06 00:00:00 UTC,"Meat Processing, Poultry Processing",Epicurean's Choice Foods; Heartland Fresh Foods,35,3507,Small,3,,true
+P19456A,P19456A,Rio Star Foods,3251 West Commerce Street,Dallas,TX,75212,,Poultry Processing,"",40,4024,Small,4,,true
+P1947A,M1947A + P1947A,Halpern's Steak and Seafood Company,4175 Davis Creek Court,Kalamazoo,MI,49001,,"Meat Processing, Poultry Processing","",50,5034,Small,4,,true
+P1949,P1949,Simmons Prepared Foods,9802 S. Hwy 59,Gentry,AR,72734,,"Poultry Processing, Poultry Slaughter","Simmons Foods, Inc.; Simmons Prepared Foods",35,3518,Large,5,5,true
+P19493,M19493 + P19493,Beverly Processing,385 Hardeeville Industrial Park Road,Hardeeville,SC,29927,,"Meat Processing, Poultry Processing","",85,8522,Small,4,,true
+P19514,P19514,Tyson Foods,14660  U S Highway 41 South,Robards,KY,42452,,"Poultry Processing, Poultry Slaughter","Aldi (Kirkwood Brand); Costco; Costco (Kirkland); Costco Mexico; Delightful Farms; Food Lion; Giant Eagle; Hanaford; Harris Teeter; Kroger; Kroger (Heritage Farms); Meijer; Prospect Farms; Publix; Safeway; Sam's (Daily Chef); Target (Market Pantry); Tyson ( Spare Time ); Tyson Chicken, Inc.; Wakefern; Wal-mart (Great Value Brand)",90,9006,Large,5,5,true
+P19636,M19636 + P19636,Tyson Foods,2800 E. Tyson Dr.,Union City,TN,38261,2008-11-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Houston Farms; Prospect Farms; Tyson Farms Inc,90,9023,Large,5,5,true
+P19669,M19669 + P19669,Allen Brothers,1250 Whipple Road,Union City,CA,94587,2021-07-07 00:00:00 UTC,"Meat Processing, Poultry Processing",Del Monte Meat Company,5,511,Small,3,,true
+P19688,P19688 + V19688,Sanderson Farms,2000 Shiloh Avenue,Bryan,TX,77803,,"Certification - Export, Poultry Processing, Poultry Slaughter",Covington Farms,40,4035,Large,5,5,true
+P19719,M19719 + P19719,Twin Rivers Foods,201 North 2nd Street,Fort Smith,AR,72901,,"Meat Processing, Poultry Processing","",35,3505,Small,4,,true
+P19719E,M19719E + P19719E,Twin Rivers Foods,124 North E Street,Fort Smith,AR,72901,,"Meat Processing, Poultry Processing","",35,3505,Small,3,,true
+P19782,M19782 + P19782,E. Excel Food,3700 E. Melville Way,Anaheim,CA,92806,2014-10-01 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,521,Small,3,,true
+P19865,P19865 + V19865,House of Raeford Farms of LA,"3867 2nd St., Hwy 80 West",Arcadia,LA,71001,2017-08-08 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter",Columbia Farms; House of Raeford; Raeford Farms of Louisiana,40,4014,Large,5,5,true
+P19871,P19871,Filet of Chicken,146 Forest Parkway,Forest Park,GA,30297,,Poultry Processing,"",85,8505,Small,5,,true
+P19879,M19879 + P19879,Golden Valley Industries,960 Lone Palm Avenue,Modesto,CA,95351,,"Meat Processing, Poultry Processing","",5,509,Small,4,,true
+P19909,M19909 + P19909,Bally United Produce,429 Forest Gate Drive,Garland,TX,75042,,"Meat Processing, Poultry Processing","",40,4024,Small,3,,true
+P19953,M19953 + P19953,Go Go Sales,3050-A E. 11th Street,Los Angeles,CA,90023,2016-06-07 00:00:00 UTC,"Meat Processing, Poultry Processing",L & T Meat,5,535,Very Small,3,,true
+P20088,M20088 + P20088 + V20088,Brakebush Irving,2230 East Union Bower,Irving,TX,75061,,"Certification - Export, Poultry Processing","",40,4024,Large,5,,true
+P20091,M20091 + P20091,Country Ranch Food Products,1460 Fieldpark Circle,Marietta,GA,30066,,"Meat Processing, Poultry Processing","",85,8507,Small,2,,true
+P20106,M20106 + P20106,Dallas USA Foods,1880 Lone Star Drive,Dallas,TX,75212,,Poultry Processing,"",40,4024,Small,4,,true
+P20153,M20153 + P20153,Rice Field,14500 E. Valley Boulevard,City of Industry,CA,91746,,"Meat Processing, Poultry Processing",Great River Foods; Valley Star Corp.,5,506,Small,3,,true
+P20204,M20204 + P20204 + V20204,Denmark Foods,7713 West Golden Lane,Peoria,AZ,85345,2011-03-02 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat","",5,504,Small,3,,true
+P20245,P20245,Keystone Foods,2294 KY Highway 90 West,Albany,KY,42602,2021-10-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Coosa Valley Foods; Equity Group Kentucky Division, LLC; Key Farms; KeyFarms; Keystone Foods, LLC; Prospect Farms; Spare Time; Tyson Foods, Inc.",90,9002,Large,5,5,true
+P20251,P20251,Tecumseh Poultry,333 South Third Street,Tecumseh,NE,68450,2018-11-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",MBA Poultry,15,1516,Small,4,5,true
+P20251W,M20251W + P20251W,Tecumseh Poultry,13151 Dovers Street,Waverly,NE,68462,2018-11-07 00:00:00 UTC,"Meat Processing, Poultry Processing",MBA Poultry,15,1516,Small,4,,true
+P20256,P20256,Broomes Poultry,24816 Austin Rd.,Albemarle,NC,28001,,Poultry Processing,"",80,80,Very Small,3,,true
+P20322,M20322 + P20322,Keystone Foods,57 Melvin Clark Road,Baker Hill,AL,36027,,"Meat Processing, Poultry Processing, Poultry Slaughter","Equity Group Eufaula Division, LLC; Key Farms; Keystone Foods, LLC; Prospect Farms; Tyson Foods, Inc.",90,9001,Large,5,5,true
+P20401,M20401 + P20401,Prime Foods,5213 Monroe Pl.,Hyattsville,MD,20781,,"Meat Processing, Poultry Processing","",80,8006,Small,3,,true
+P20446,M20446 + P20446 + V20446,Central Illinois Poultry Processing,119 N CR 000 East,Arthur,IL,61911,,"Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, V","",50,50,Small,2,4,true
+P206,P206 + V206,Pilgrim's Pride,928 Martin Luther King Jr. Blvd.,Nacogdoches,TX,75961,,"Certification - Export, Poultry Processing, Poultry Slaughter","",40,4029,Large,5,5,true
+P20604,P20604,Gerber Poultry,5889 Kidron Rd.,Kidron,OH,44636,,"Poultry Processing, Poultry Slaughter","",50,5011,Small,5,5,true
+P20699A,P20699A,Alatrade Foods,695 W. Henderson Road,Boaz,AL,35957,,Poultry Processing,"",90,9012,Small,4,,true
+P20770,M20770 + P20770,Charles Austin Holdings,1801 South Canal St.,Chicago,IL,60616,,"Meat Processing, Poultry Processing","",50,50,Small,4,,true
+P208,P208 + V208,George's Processing,1306 North Kansas St,Springdale,AR,72764,,"Certification - Export, Poultry Processing, Poultry Slaughter","",35,3512,Large,5,5,true
+P20820,M20820 + P20820,Dbran Poultry,218 S. 8th Ave.,La Puente,CA,91746,,"Meat Processing, Poultry Processing","",5,506,Small,3,,true
+P20826,M20826 + P20826 + V20826,Griggstown Quail Farm,484 Bunker Hill Road,Princeton,NJ,08540,,"Meat Processing, Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter -","",80,8012,Very Small,2,4,true
+P20887,M20887 + P20887,Crescent Foods,4343 West 44th Place,Chicago,IL,60632,2017-10-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",50,5006,Small,4,,true
+P20889,M20889 + P20889,Crown I Enterprises,85 Saxon Avenue,Bay Shore,NY,11706,2020-06-10 00:00:00 UTC,"Meat Processing, Poultry Processing",Cucina Biello; Krazy Cook's Kitchen; Restaurant Row Kitchens; W.B. Stockyard,60,6017,Small,3,,true
+P20935,M20935 + P20935,Michigan Turkey Producers Co-op,2140 Chicago Drive SW,Wyoming,MI,49519,,"Meat Processing, Poultry Processing, Poultry Slaughter","",50,5009,Small,5,4,true
+P2095,M2095 + P2095,Nealey's Foods,3348 S. Pulaski Rd.,Chicago,IL,60623,,"Meat Processing, Poultry Processing","Nealey's Foods, Inc.",50,5002,Small,2,,true
+P211,P211,Palmetto Pigeon Plant,333 Broad Street,Sumter,SC,29150,,"Poultry Processing, Poultry Slaughter","",85,8522,Small,2,4,true
+P21103,M21103 + P21103,US Foods,1608 10th Avenue North,Birmingham,AL,35203,2018-06-12 00:00:00 UTC,"Meat Processing, Poultry Processing",SRA FOODS; STOCK YARDS MEATPACKING COMPANY; Stock yards of Birmingham; US Foods,90,90,Small,3,,true
+P21200,M21200 + P21200,Visionary Foods,515 Commercial Drive,Statham,GA,30666,2020-03-11 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,85,Small,3,,true
+P21202,M21202 + P21202,Halsey Food Service,401 Lanier Road,Madison,AL,35758,2018-12-10 00:00:00 UTC,"Meat Processing, Poultry Processing",Diamond Star Premium Meat Co,90,90,Small,3,,true
+P21207,M21207 + P21207 + V21207,Lorentz Etc.,705 Cannon Industrial Blvd.,Cannon Falls,MN,55009,,"Certification - Export, Meat Processing, Meat Slaughter, Poultry Processing, Voluntary Processing - Meat, Voluntary Slaughter - Meat",Lorentz,25,2531,Small,4,3,true
+P21234,P21234,Perdue Foods,250 Ga Hwy 247 Spur,Perry,GA,31069,2019-11-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Carolina Fare; Chef's Choice; Coleman; Coleman Natural Foods; Cookin' Good; Gol Pak; Harvestland; Kirkland Signature; Pennysworth; Shenandoah,85,8509,Large,5,5,true
+P21254,M21254 + P21254,William & Co.,135-136 Newmarket Square,Boston,MA,02118,,"Meat Processing, Poultry Processing","",60,6008,Very Small,3,,true
+P21275,M21275 + P21275,D&D Foods,9425 N. 48th St.,Omaha,NE,68152,,"Meat Processing, Poultry Processing","",15,1522,Small,4,,true
+P2130,M2130 + P2130,Cooper Farms Processing,1 Cooper Farms Drive,St. Henry,OH,45883,2019-08-02 00:00:00 UTC,"Meat Processing, Poultry Processing, Poultry Slaughter","",50,5032,Large,5,4,true
+P21342,M21342 + P21342,WanRong Trading,4843 32nd Place,Long Island City,NY,11101,,"Meat Processing, Poultry Processing","",60,6017,Small,4,,true
+P21430,M21430 + P21430,Bert Posess,100 East 25th Street,Paterson,NJ,07514,2001-10-01 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,8023,Small,2,,true
+P21494,M21494 + P21494,CCP Poultry & Meat,4755 East 49th Street,Vernon,CA,90058,,"Meat Processing, Poultry Processing","",5,514,Small,3,,true
+P21498,M21498 + P21498,Ozark Mountain Poultry,750 West Easy Street,Rogers,AR,72756,2018-07-11 00:00:00 UTC,"Meat Processing, Poultry Processing","Forester Farmer's Market; OMP Foods; OMP Processing; Ozark Mountain Poultry, Inc.",35,3518,Large,5,,true
+P215,M248B + P215,Butterfield Foods Company,225 Hubbard Avenue,Butterfield,MN,56120,,"Meat Processing, Poultry Processing, Poultry Slaughter","",25,2535,Small,4,5,true
+P2178,P2178,Perdue Foods,20621 Savannah Road,Georgetown,DE,19947,,"Poultry Processing, Poultry Slaughter",COLEMAN NATURAL FOODS,80,8004,Large,5,5,true
+P218,P218,Pilgrim's Pride,1710 W. Frank Avenue,Lufkin,TX,75904,,"Poultry Processing, Poultry Slaughter",County Post; Pilgrim's; Pilgrim's Pride,40,4029,Large,5,5,true
+P21838,M21838 + P21838,OK Foods,5000 HWY 431,Albertville,AL,35950,,"Meat Processing, Poultry Processing",Bachoco,90,9012,Small,4,,true
+P2186,P2186,George's Foods,501 NORTH LIBERTY STREET,HARRISONBURG,VA,22802,2011-04-05 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8008,Large,5,5,true
+P21863A,M21863A + P21863A,Rio Grande Pak Foods,4100 W. Ursula Avenue,McAllen,TX,78503,,Poultry Processing,"",40,4031,Small,4,,true
+P21874,M21874 + P21874,Rosemead Processing Meats,2508 Lee Avenue,South El Monte,CA,91733,,"Meat Processing, Poultry Processing","",5,506,Very Small,4,,true
+P21929,M21929 + P21929,ALMI Group,5419 N. Mascher Street,Philadelphia,PA,19120,2019-09-09 00:00:00 UTC,"Meat Processing, Poultry Processing",Mama Ada's,60,6022,Very Small,2,,true
+P21938,M21938 + P21938,EcoFriendly Foods,3397 Stoneyfork Road,Moneta,VA,24121,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",80,80,Very Small,2,3,true
+P2199,M2199 + P2199,Omni Custom Meats,151 Vanderbilt Court,Bowling Green,KY,42103,2001-02-08 00:00:00 UTC,"Meat Processing, Poultry Processing","",90,9002,Small,3,,true
+P22000,P22000,Prestage Foods,P.O. Box 9,St Pauls,NC,28384,2016-06-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8005,Small,5,4,true
+P22052,M22052 + P22052 + V22052,Hamilton Meat,3515 Main Street,Chula Vista,CA,91911,2019-01-04 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing",Hamilton Meats and Provisions,5,518,Small,3,,true
+P22080,M22080 + P22080 + V22080,International Meat,7107 W. Grand Ave.,Chicago,IL,60707,,"Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat","",50,50,Small,2,,true
+P2213D,M2213D + P2213D + V2213D,Buckhead Meat Dallas a Sysco Company,4216 Mint Way,Dallas,TX,75237,2021-11-02 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing",Freedman Food Service; Freedman Food Service - Dallas,40,4024,Small,4,,true
+P2227,P2227,Hatcher Poultry & Egg Co.,610 Washington Street,Wichita Falls,TX,76306,,Poultry Processing,"",40,4028,Very Small,2,,false
+P2298,M2298 + P2298,Deen Meat and Cooked Foods,813 E. Northside Drive,Fort Worth,TX,76102,,"Meat Processing, Poultry Processing","",40,4025,Small,4,,true
+P2338,M2338 + P2338,Ben E. Keith Company,2250 Lone Star Drive,Dallas,TX,75212,,"Meat Processing, Poultry Processing",Ben E. Keith Foods; Winn Meat Company,40,4024,Small,3,,true
+P243,P243,Tyson Foods,340 W. Maple,Cumming,GA,30040,,"Poultry Processing, Poultry Slaughter","Tyson Poultry, Inc.",85,8507,Large,5,5,true
+P244,P244,Plainville Brands,304 S. Water Street,New Oxford,PA,17350,,"Poultry Processing, Poultry Slaughter","",60,6005,Large,5,4,true
+P244C,M244C + P244C,Tyson Fresh Meats,2700 23rd Avenue,Council Bluffs,IA,51501,,"Meat Processing, Poultry Processing","IBP, inc.; Tyson Foods, Inc.",25,2518,Large,5,,true
+P247,P247,Sanderson Farms,28163 Highway 28 East,Hazlehurst,MS,39083,,"Poultry Processing, Poultry Slaughter","",90,9004,Large,5,5,true
+P2540,M2540 + P2540,KBDetroit,1939 Adelaide St.,Detroit,MI,48207,2018-02-08 00:00:00 UTC,"Meat Processing, Poultry Processing","CBC ; Chicago Beef Company; Kay Packing; KBD, Inc.",50,5008,Small,3,,true
+P2617,M2617 + P2617,Perdue Foods,1155 Candler Rd.,Gainesville,GA,30507,2017-11-12 00:00:00 UTC,"Meat Processing, Poultry Processing",Coleman Natural; Kings Delight; Lake Lanier Farms; Penn Valley; Petaluma Poultry; Sugar Lake Farms,85,8513,Small,4,,true
+P2629,M2629 + P2629 + V2629,Hobson Food Service,6167 Cockrill Bend Circle,Nashville,TN,37209,,"Meat Processing, Poultry Processing","",90,9029,Very Small,3,,true
+P263,M263 + P263 + V263,Jones Dairy Farm,800 Jones Ave,Fort Atkinson,WI,53538,2017-08-08 00:00:00 UTC,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing","Greensboro Packers; Habbersett; Ralph & Paul Adams, Inc.",25,2530,Small,4,,true
+P2632,P2632,Pilgrim's Pride,19740 US Hwy 90 West,Live Oak,FL,32064,,"Poultry Processing, Poultry Slaughter",Pilgrims Corporation,85,8523,Large,5,5,true
+P2676,M2676 + P2676,Southeast Poultry,2200 Town West Drive,Rogers,AR,72756,,Poultry Processing,"",35,3512,Small,4,,true
+P2686,P2686,Keystone Foods,7220 US Highway 19 North,Camilla,GA,31730,,"Poultry Processing, Poultry Slaughter","Equity Group Georgia Division, LLC; KeyFarm; Keystone Foods; Keystone Foods Intermediate LLC; Prospect Farms; Tyson Foods, Inc.",85,8501,Large,5,5,true
+P27,P27 + V27,Tyson Foods,8564 Highway 71 South,Grannis,AR,71944,,"Certification - Export, Poultry Processing, Poultry Slaughter","Arkie Chicken; Brennan Packing Co., Inc.; Carroll County; Cavanaugh Lakeview Farms; Choctaw Maid; Colonia; Delightful Farms; Delta Valley; Eastwood Foods; Gold Leaf; Greenwich; Holly Farms; Howard County; Hudson Foods, Inc.; Janet Davis; Lady Aster (Food Service); McCarty Foods; Ole Carolina Brand & Design; Patti Jean; Prospect Farms; Spare Time; Tyson; Victor F. Weaver Co.; Washington Creamery",35,3514,Small,5,5,true
+P272,M272 + P272,T.F. Kinnealey,1100 Pearl Street,Brockton,MA,02301,2017-12-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6029,Small,4,,true
+P27216,M27216 + P27216,Great American Trucking,785 S Congress Avenue,Delray Beach,FL,33445,,"Meat Processing, Poultry Processing",Select Foods,85,8535,Small,3,,true
+P27297,M27297 + P27297,Campo Lindo Farms,2390 S. E. 228th St.,Lathrop,MO,64465,,"Poultry Processing, Poultry Slaughter","",35,3506,Very Small,2,3,true
+P27389,M27389 + P27389 + V27389,Pitman Farms,1078 North Avenue,Sanger,CA,93657,,"Certification - Export, Poultry Processing, Poultry Slaughter","",5,502,Large,5,5,true
+P27505,M27505 + P27505,Gold Creek Processing,686 Highway 9 N,Dawsonville,GA,30534,,Poultry Processing,Agora; Gold Creek; Gold Creek Foods; Gold Creek Processing,85,85,Small,4,,true
+P27505A,M27505A + P27505A,Gold Creek Processing,2255 White Sulphur Road,Gainesville,GA,30501,,"Meat Processing, Poultry Processing",Agora; Gold Creek; Gold Creek Foods; Gold Creek Processing,85,8513,Small,5,,true
+P286,P286,Perdue Foods,65 South 200 West,Washington,IN,47501,2017-03-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Chef-Quik; Gol-Pak; Harvestland,50,5031,Large,5,4,true
+P2882,P2882,Perdue Foods,2700 Lakeville Highway,Petaluma,CA,94955,2017-11-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",5,531,Small,4,5,true
+P2902,M2902 + P2902,Cougle Commission Company,2801 S. Ashland Avenue,Chicago,IL,60607,,"Meat Processing, Poultry Processing",Cougle Foods,50,5002,Small,3,,true
+P3,P3,Mountaire Farms of Delaware,29005 John J Williams Highway,Millsboro,DE,19966,2020-11-09 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Mountaire; Mountaire Farms; Mountaire Farms Delaware; Mountaire Farms Inc.,80,8004,Large,5,5,true
+P30775,M30775 + P30775,Rose Meat Services,4561 Loma Vista Ave,Vernon,CA,90058,2017-05-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,514,Small,4,,true
+P308,P308,Koch Foods,162 Magnolia Street,Morton,MS,39117,,"Poultry Processing, Poultry Slaughter","",90,9004,Large,5,5,true
+P31639,M31639 + P31639,Everest Meats,1617 East 25th Street,Los Angeles,CA,90011,2004-11-03 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,535,Small,3,,true
+P31727,M31727 + P31727 + V31727A,Kiryas Joel Poultry Processing Plant,7 Dinev Road,Monroe,NY,10950,,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter",Alle; Fairway; Kedas; Kehilla ; Kiryas Joel Meat and Poultry; Koshers Best; Orange County Poultry; Quality Halal Poultry; Quality Kosher ; Tifereth,60,6027,Small,4,5,true
+P31843,M31843 + P31843,James River Correctional Center,1954 Meat Plant Road,State Farm,VA,23160,,"Meat Processing, Poultry Processing","",80,80,Small,2,,true
+P31851,M33885 + P31851,Chee Foo International,4545 N 43rd Ave,Phoenix,AZ,85031,2005-03-11 00:00:00 UTC,Poultry Processing,Chi Hing Food Service Inc,5,504,Small,3,,true
+P31877,M31877 + P31877,Twin Rivers Foods,602 S.E. 1st Street,Atkins,AR,72823,,Poultry Processing,"",35,3520,Small,4,,true
+P31881,P31881 + V31881,DG Foods,1095 Industrial Drive,Hazlehurst,MS,39083,2019-07-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",90,9004,Small,5,,true
+P31884,M31884 + P31884 + V31884,Pritzlaff Wholesale Meats,17025 W. Glendale Drive,New Berlin,WI,53151,,"Meat Processing, Poultry Processing, Voluntary Slaughter - Meat","",25,2517,Very Small,4,,true
+P31932,M31932 + P31932,Certified Meat Products,4586 E. Commerce,Fresno,CA,93725,,"Meat Processing, Poultry Processing","",5,505,Small,4,,true
+P31979,M31979 + P31979,Foundation Food Group,1100 Airport Parkway,Gainesville,GA,30501,,"Meat Processing, Poultry Processing","",85,85,Small,4,,true
+P31980,M31980 + P31980,M&C Unico,2041 Hawkins Circle,Los Angeles,CA,90001,2006-09-06 00:00:00 UTC,Meat Processing,Tacos El Unico,5,535,Very Small,2,,true
+P32,P32,Mar-Jac Poultry,1020 Aviation Blvd,Gainesville,GA,30501,,"Poultry Processing, Poultry Slaughter","",85,8513,Large,5,5,true
+P320,P320,Sanderson Farms,2535 Sanderson Drive,Laurel,MS,39440,,"Poultry Processing, Poultry Slaughter","",90,9009,Large,5,5,true
+P32042,M32042 + P32042 + V32042,Brushy Prairie Packing,435 N. 850 East,LaGrange,IN,46761,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit","",50,5033,Very Small,3,3,true
+P32130,M32130 + P32130 + V32130,Dakota Provisions,20827 403rd Avenue,Huron,SD,57350,2019-12-06 00:00:00 UTC,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing, Poultry Slaughter",Dakota Deli; Dakota Provisions,25,2535,Large,5,4,true
+P32133,M32133 + P32133,A&B,1842 Highway 43 North,Pelahatchie,MS,39145,2019-12-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",90,90,Small,4,,true
+P32143,P32143,Otto's Poultry,5622 Whitneyville Road,Middleville,MI,49333,,"Poultry Processing, Poultry Slaughter",Otto's Chicken,50,5009,Very Small,3,4,true
+P32145,M38494 + P32145 + V32145,Emmaus Foods,661 Railroad Avenue,Albertville,AL,35951,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry","",90,9010,Small,4,,true
+P32170,M32170 + P32170,Ganaderos Borges,Barrio Hucares,Naguabo,PR,00718,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter",Borges Meat; Borges Pork; Ganaderia Raul,85,8544,Small,4,3,true
+P32174,P32174,Alatrade Foods,200 Tyson Drive,Albertville,AL,35950,,Poultry Processing,"",90,9012,Large,5,,true
+P32182,P32182,Sanderson Farms,700 Hwy 133 South,Moultrie,GA,31788,2019-05-02 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Covington Farms,85,8501,Large,5,5,true
+P322,M322A + P322,Pilgrim's Pride,851 Sauk River Road,Cold Spring,MN,56320,2019-04-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",GNP Company; Gold'n Plump Poultry LLC; JFC LLC,25,2504,Large,5,5,true
+P325,P325,Tyson Foods,1019 Shelbyville Street,Center,TX,75935,2018-08-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","TSD Sales & Distribution; Tyson Farms, Inc.",40,4029,Large,5,5,true
+P33831,M33831 + P33831 + V33831,Ayrshire Farm Management,21846 Trappe Rd.,Upperville,VA,20185,,"Animal Foods Inspection, Poultry Processing, Poultry Slaughter","",80,8014,Very Small,1,2,true
+P33861,M33861 + P33861,Standard Meat Company,455 Sansom Blvd.,Saginaw,TX,76179,2019-12-06 00:00:00 UTC,"Meat Processing, Poultry Processing","DOS Project, LP",40,4025,Small,4,,true
+P33885,M33890 + P33885,Wayne Farms,112 Plugs Drive,Decatur,AL,35602,,Poultry Processing,Dutch Quality House,90,9010,Large,4,,true
+P33900,P33900 + V33900,Foster Farms,6648 HWY 15 North,Farmerville,LA,71241,2019-12-06 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter",Sunland Poultry Co.,40,4014,Large,5,5,true
+P33901,M33901 + P33901,Foster Farms,6648 HWY 15 North,Farmerville,LA,71241,2019-12-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4014,Small,5,,true
+P33982,M33982 + P33982,Gold Taste Foods Distributors,10765 Kingspoint Road,Houston,TX,77075,2015-09-03 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4032,Small,3,,true
+P33997,M33997 + P33997,Roundy's Supermarkets,5500 - 52nd Street,Kenosha,WI,53144,2017-07-04 00:00:00 UTC,"Meat Processing, Poultry Processing",RCK Foods,25,2517,Small,4,,true
+P34009,M34009 + P34009,Washington Lamb,7963 Conell Court,Lorton,VA,22079,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",80,8006,Small,3,,true
+P34078A,M34078A + P34078A,Tri Eagle,8151 S. Range Rd.,Kingsford Heights,IN,46346,,"Meat Processing, Poultry Processing",Great Lakes Poultry,50,5013,Small,3,,true
+P34084,P34084,Edmunds Foods,385 Red Oaks Flat Loop,Dahlonega,GA,30533,,Poultry Processing,"",85,85,Small,3,,true
+P34095,M34095 + P34095 + V34095,A1 Meat Solutions,3219 Durfee Avenue,El Monte,CA,91732,,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing","",5,514,Very Small,4,,true
+P341,P341,Golden Rod Broilers,2352 County Road 719,Cullman,AL,35055,,"Poultry Processing, Poultry Slaughter","",90,9001,Small,4,5,true
+P34145,M34145 + P34145,Kadejan,500 12th St. NE,Glenwood,MN,56334,,"Meat Processing, Poultry Processing, Poultry Slaughter","",25,2503,Very Small,3,4,true
+P34152,M34152 + P34152,Anmar Foods,2150 W. Carroll Ave.,Chicago,IL,60612,,"Meat Processing, Poultry Processing",Anmar Foods,50,5002,Small,3,,true
+P34193,M34193 + P34193 + V34193,Swift Beef,15555 Meridian Parkway,Riverside,CA,92518,,"Certification - Export, Meat Processing, Poultry Processing","Swift Beef Company, JBS Riverside Inc.,JBS USA LLC, Wild Fork Foods",5,525,Small,4,,true
+P34195,M34195 + P34195,Gourmet Specialty Foods,100 Willow Street,North Andover,MA,01845,,"Meat Processing, Poultry Processing","",60,6008,Very Small,3,,true
+P34227,M34227 + P34227,Lawson Foods,145 40th Street,Irvington,NJ,07111,,"Meat Processing, Poultry Processing","",80,8020,Small,4,,true
+P34243,M34243 + P34243,T.G. Meat Center,508 Wallace Street,East Bernard,TX,77435,2014-10-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4026,Very Small,4,,true
+P34308,P34308,Sanderson Farms,301 Aviation Parkway,Waco,TX,76705,2019-12-02 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Covington Farms,40,4033,Large,5,5,true
+P34371,M34371 + P34371,Union Foods,751 Fenner Rd.,Rocky Mount,NC,27804,2019-08-10 00:00:00 UTC,Poultry Processing,"",80,8015,Small,4,,true
+P34376,M34376 + P34376,Spectrum Foods,3388 Pennsy Dr.,Landover,MD,20785,2007-10-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,8006,Small,3,,true
+P34453,P34453,Alatrade Foods,6 Downing Drive,Phenix City,AL,36869,,Poultry Processing,"",90,9001,Large,5,,true
+P34467,M34467 + P34467 + V34467,Shamrock Food,5199 Ivy Street,Commerce City,CO,80022,2019-09-04 00:00:00 UTC,"Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry",Gold Canyon Meat Co.,15,1514,Small,3,,true
+P34495,M34495 + P34495,J.J. Foodservice,2504 S. Santa Fe Avenue,Vista,CA,92084,,"Meat Processing, Poultry Processing","",5,518,Small,3,,true
+P34715,M34715 + P34715,Patterson TMP Operating,8905 Forum Way,Fort Worth,TX,76140,,"Meat Processing, Poultry Processing",Clearfork Foods; Patterson Food Processors; Texas Meat Packers,40,4025,Small,4,,true
+P34729,P34729,White Oak Pastures,22775 US Highway 27,Bluffton,GA,39824,2011-08-06 00:00:00 UTC,Poultry Slaughter,"",85,85,Small,2,4,true
+P38463,M38463 + P38463,La Indi Poultry,15268 Proctor Ave,City of Industry,CA,91746,2009-04-02 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,506,Small,3,,true
+P38466,P38466,Sensenig Turkey Farm,465 Reifsnyder Road,Lititz,PA,17543,,"Poultry Processing, Poultry Slaughter","",60,6023,Small,3,4,true
+P38468,M38468 + P38468 + V38468,Colorado Premium Foods,"5140 Race Court, Unit 1",Denver,CO,80216,2011-04-02 00:00:00 UTC,"Meat Processing, Voluntary Processing - Meat",K2D Foods; Silver States Meats,15,1514,Small,4,,true
+P38511,M38511 + P38511 + V38511,New S.B.L.,1001 W 45th St,Chicago,IL,60609,,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing","",50,50,Small,4,,true
+P38514,M38514 + P38514,C&S Poultry,608 Monterey Pass Road,Monterey Park,CA,91754,,"Meat Processing, Poultry Processing","",5,514,Very Small,4,,true
+P38522,M38522 + P38522,Metropolitan Foods,6 West Belt,Wayne,NJ,07470,,"Meat Processing, Poultry Processing",Driscoll Foods,80,8023,Very Small,3,,true
+P38555,P38555,Anco Poultry Processing,24161 NW Kentucky Rd,Garnett,KS,66032,,"Poultry Processing, Poultry Slaughter","",35,3507,Very Small,2,3,true
+P39,P39,Pine Manor,9622 West County Road 350 North,Orland,IN,46776,,"Poultry Processing, Poultry Slaughter",Crystal Valley Foods; Crystal Valley Poultry; Fawn River Poultry; Katie's Best; Miller Amish Country Farms; Miller Amish Country Foods; Miller Amish Country Poultry; Miller Poultry; Orland Poultry; Pine Manor; Pine Manor Farms; Pine Manor Foods; Pine Manor Poultry,50,5033,Small,4,5,true
+P39891,M39891 + P39891,P H Foods,4013 Highway 80,Morton,MS,39117,,"Meat Processing, Poultry Processing","",90,90,Small,4,,true
+P39915,P39915 + V39915,Locust Point Farms,430 LOCUST POINT ROAD,ELKTON,MD,21921,,"Food Inspection, Identification - Poultry, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","",80,8014,Small,4,4,true
+P40,P40,Pilgrim's Pride,125 Industrial Blvd.,Ellijay,GA,30540,,"Poultry Processing, Poultry Slaughter","",85,8507,Large,5,5,true
+P4005,M4005 + P4005 + V4005,Williamsburg Packing,920 Eastland Avenue,Kingstree,SC,29556,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Slaughter - Meat, Voluntary Slaughter - Poultry, Voluntar","",85,8522,Very Small,3,3,true
+P40059,M40059 + P40059,Legendary Meats,1058 King Industrial Drive,Marietta,GA,30062,2019-03-05 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,8507,Small,3,,true
+P40124,P40124,Foundation Food Group,2080 Industrial Drive,Gainesville,GA,30504,2021-04-01 00:00:00 UTC,Poultry Processing,Victory Processing #2,85,85,Large,4,,true
+P40169,M47283+P40169+V40169,Heritage Hill Processing,15024 Sandstone Dr.,Utica,MN,55979,0020-05-27 00:00:00 UTC,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit",KB Poultry Processing,,,,,,true
+P40181,M40181 + P40181,The Best Bran,15268 Proctor Avenue,City of Industry,CA,91746,,"Meat Processing, Poultry Processing","",5,506,Small,3,,true
+P40183,P40183,Sanderson Farms,2081 Sanderson Way,Kinston,NC,28504,,"Poultry Processing, Poultry Slaughter","",80,8015,Large,5,5,true
+P40264,M40264 + P40264 + V40264,Rancher's US OP,4301 White Bear Parkway,Vadnais Heights,MN,55110,2021-07-01 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat",Ranchers Legacy,25,2512,Small,3,,true
+P403,M27266 + P403,West Central Turkeys,704 N. Broadway,Pelican Rapids,MN,56572,2014-07-05 00:00:00 UTC,"Meat Processing, Poultry Processing","Festive Brand; Hormel Foods Corporation; Jennie-O; Jennie-O Foods, Inc.s; Jennie-O Turkey Store Sales; Jennie-O Turkey Store, Inc.; Jerome Foods, Inc.; Jerome's Golden Glo; Norwestern Deli; The Turkey Store, Inc.",25,2503,Large,5,,true
+P40311,M40311 + P40311,Mecca Halal Poultry,36-27 32nd Street,Long Island City,NY,11106,,"Meat Processing, Poultry Processing","",60,6017,Very Small,2,,true
+P40345,P40345,Misty Lea Farm Poultry Processing,1567 Jeff Adams Road,Pembroke,KY,42266,2021-01-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",90,9002,Very Small,2,4,true
+P40367,M40367 + P40367,Shuler Meats,124 Shuler Road,Thomasville,NC,27360,,"Meat Processing, Poultry Processing","",80,80,Small,4,,true
+P40440,M40440 + P40440,RYC Foods,402 Menchaca Street,San Antonio,TX,78207,2012-10-08 00:00:00 UTC,Meat Processing,"",40,4040,Small,3,,true
+P4089,M4089 + P4089 + V4089,Poultry Products of Manchester,31 Jack's Bridges Road,Londonderry,NH,03053,,"Food Inspection, Meat Processing, Poultry Processing",Poultry Products Northeast; PPNE; Prime Source Foods,60,6025,Small,2,,true
+P4102,M4102 + P4102 + V4102,Morasch Meats,4050 NE 158th,Portland,OR,97230,2018-01-02 00:00:00 UTC,"Animal Foods Inspection, Certification - Export, Certification - Trichinae, Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat, Voluntary Processing - Poul","",15,1509,Small,4,,true
+P4104,M4104 + P4104,Palisades Ranch,5925 South Alcoa Avenue,Vernon,CA,90058,,"Meat Processing, Poultry Processing","",5,503,Small,4,,true
+P4114,M6028A + P4114 + V6028A,West Coast Prime Meats,344 Cliffwood Park,Brea,CA,92821,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Rabbit","",5,521,Small,4,,true
+P4121A,M4121A + P4121A + V4121A,Custom Made Meals,5575 Logan Ct.,Denver,CO,80216,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat",Dale Easton,15,1514,Small,3,,true
+P4150,M4150 + P4150,Tommy's Quality Meats,2363 Newton Avenue,San Diego,CA,92113,,"Meat Processing, Poultry Processing","",5,518,Small,3,,true
+P4153,M4153 + P4153,Shelton Poultry,204 N Loranne Ave.,Pomona,CA,91767,2001-03-01 00:00:00 UTC,Poultry Processing,"",5,506,Small,3,,true
+P4159,M4159 + P4159,HV Randall Foods,2905 E. 50th St.,Vernon,CA,90058,,"Meat Processing, Poultry Processing","",5,503,Small,4,,true
+P4177,M4177 + P4177,Leyen Food,14328 Lomitas Avenue,La Puente,CA,91746,,"Meat Processing, Poultry Processing",D & D poultry LLC,5,506,Small,4,,true
+P4181,M4181 + P4181,Mao Foods,1839 E 42nd Street,Los Angeles,CA,90058,,"Poultry Processing, Poultry Slaughter","",5,535,Small,4,4,true
+P4187,M4187 + P4187 + V4187,Wayne Provisions,5030 Gifford Ave.,Vernon,CA,90058,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry","",5,503,Small,3,,true
+P419,P419,Case Farms Processing,121 Rand Street,Morganton,NC,28655,,"Poultry Processing, Poultry Slaughter","",80,8007,Large,5,5,true
+P425,P425 + V425,Northern Pride,401 Conley Avenue South,Thief River Falls,MN,56701,,"Certification - Export, Poultry Processing, Poultry Slaughter, Voluntary Slaughter - Poultry","",25,2527,Small,5,4,true
+P4398,M4398 + P4398,DiLuigi,41 Popes Lane,Danvers,MA,01923,2020-08-07 00:00:00 UTC,"Meat Processing, Poultry Processing",Bridger and Loften County; Karv Aria,60,6008,Small,4,,true
+P44097,P44097,DG Foods,5872 Airport Road,Bastrop,LA,71220,,Poultry Processing,"",40,4014,Small,5,,true
+P44121,M44121 + P44121,Pelleh Poultry,522 Happy Avenue,Swan Lake,NY,12783,,"Meat Processing, Poultry Processing, Poultry Slaughter","",60,6027,Small,3,4,true
+P44127,M44127 + P44127,Adesa International,1440 S. Vineyard Avenue,Ontario,CA,91761,,"Meat Processing, Poultry Processing","",5,525,Very Small,4,,true
+P445,P445,Wayne Farms,802 E. Atkins Street,Dobson,NC,27017,,"Poultry Processing, Poultry Slaughter",Agar; Gordon Food Service,80,8007,Large,4,5,true
+P4460,M4460 + P4460 + V4460,Dorzar,50 Avenue L,Newark,NJ,07105,2016-07-03 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat",Great American Foods; New Great American Veal,80,8016,Small,4,,true
+P44817,P44817,Chick-A-Ray Poultry & Egg,24877 Thompson Rd.,Albemarle,NC,28001,2012-07-02 00:00:00 UTC,Poultry Processing,"",80,80,Very Small,2,,true
+P44826,P44826,Case Farms Processing,1925 30th St. NE,Canton,OH,44705,,"Poultry Processing, Poultry Slaughter","",50,5021,Small,5,5,true
+P44869,M44869 + P44869 + V44869,Trig's Smoke House,1607 N. Steven Street,Rhinelander,WI,54501,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry",Trig's,25,2519,Small,3,,true
+P44932,M44932 + P44932 + V44932,BelCampo Butchery,329 S. Phillipe Lane,Yreka,CA,96097,,"Certification - Trichinae, Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Slaughter - Meat, Voluntary Sl","",15,1504,Very Small,3,2,true
+P44935,P44935,Gold Creek Processing,2320 Webb Girth Road,Gainesville,GA,30507,,Poultry Processing,"",85,85,Small,4,,true
+P44946,M44946 + P44946,Romeo Foods,7807 15th Avenue,Brooklyn,NY,11228,2017-01-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6018,Small,3,,true
+P44974,P44974 + V44974,Goffle Road Poultry Farm,549 Goffle Road,Wyckoff,NJ,07481,2012-07-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter, Voluntary Slaughter - Rabbit","",80,8023,Very Small,3,4,true
+P44976,M44976 + P44976,Empacadora y Procesadora del Sur,"Salida 76, Carretera 153",Coamo,PR,00769,,"Meat Processing, Poultry Processing","Empacadora y Procesadora del Sur; EmproSur; S.J. Meat Processing, Inc.",85,8544,Small,4,,true
+P44992,P44992,Windy Meadows Family Farm,8045 CR 4209,Campbell,TX,75422,,"Poultry Processing, Poultry Slaughter","",40,4027,Very Small,2,3,true
+P45056,P45056,Golden Foods,2408 Loma Avenue,El Monte,CA,91733,,Poultry Processing,"",5,514,Small,4,,true
+P45131,P45131,Farbest Foods,3672 S. Keller Rd.,Vincennes,IN,47591,,"Poultry Processing, Poultry Slaughter","",50,5031,Large,5,4,true
+P45134,M45134 + P45134,Birdsboro Kosher Farms,1100 Lincoln Road,Birdsboro,PA,19508,,"Meat Processing, Poultry Processing, Poultry Slaughter","",60,6060,Small,4,4,true
+P45179,M45179 + P45179,Roger's Poultry,2004 E. 67th Street,Los Angeles,CA,90001,,"Meat Processing, Poultry Processing","",5,535,Small,2,,true
+P45243,M45243 + P45243,Mama La's Kitchen,4802 Gulf FWY,Houston,TX,77023,2019-02-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4026,Small,2,,true
+P45342,P45342 + V45342,Munsell's Poultry Processing,6131 Mason Road,Fowlerville,MI,48836,,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit","",50,5034,Very Small,2,3,true
+P45344,M45344 + P45344,Silver State Meats,6560 S. Tioga Way,Las Vegas,NV,89113,,"Meat Processing, Poultry Processing","",5,510,Small,3,,true
+P45345,M45345 + P45345,Irwindale Poultry,15861 Salvatierra Street,Irwindale,CA,91706,,"Meat Processing, Poultry Processing","",5,506,Small,3,,true
+P45445,M45445 + P45445,TCE FoodCo,8500 S. Western Avenue,Oklahoma City,OK,73139,,"Meat Processing, Poultry Processing","",40,4043,Very Small,2,,true
+P45457,M45457 + P45457,J&Q Food,3225 S. Main Street,Fort Worth,TX,76110,,Poultry Processing,Evergreen Poultry,40,4025,Very Small,3,,true
+P45465,M45465 + P45465 + V45465,Common Wealth Poultry,55 Industrial Drive,Gardiner,ME,04345,2021-01-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Rabbit, Voluntary Slaughter - Rabbit","",60,6025,Small,3,4,true
+P45483,P45483,Peco Foods,4114 Highway 67 South,Pocahontas,AR,72455,2016-05-05 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",35,3513,Large,4,5,true
+P45484,M45484 + P45484,Southern Hens,329 Moselle-Seminary Road,Moselle,MS,39459,2014-06-11 00:00:00 UTC,Meat Processing,"",90,9009,Small,4,,true
+P45525,M45525 + P45525 + V45525,AA Poultry Processing,514 Cty AA,Ridgeland,WI,54763,2020-07-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit","",25,2522,Small,2,3,true
+P45530,M45530 + P45530,Foodway,2205 Texas Ave.,Shreveport,LA,71103,,"Meat Processing, Poultry Processing","",40,4014,Very Small,3,,true
+P45565,M45565 + P45565,Farm Fresh Foods,5016 Grimes Drive,Guntersville,AL,35976,2019-04-09 00:00:00 UTC,"Meat Processing, Poultry Processing","",90,9010,Large,5,,true
+P45597,M45597 + P45597,Premier Custom Foods,756 Pawnee Ave,Kansas City,KS,66105,2018-04-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",35,3507,Very Small,3,,true
+P45638,P45638,Trilogy Foods,1445-B Josh Pirkle Road,Braselton,GA,30517,,Poultry Processing,"Garimark Foods; Garymark Foods, LLC; Trinity Foods, LLC; Vital Foods",85,8517,Small,4,,true
+P45652,M45652 + P45652,Shah's Halal Food & Products,138 - 62 94th Avenue,Jamaica,NY,11435,2016-07-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6018,Very Small,4,,true
+P45661,P45661,DH Farms,5619 FM 1624,Lexington,TX,78947,,"Poultry Processing, Poultry Slaughter","",40,4030,Very Small,2,3,true
+P45682,M45682 + P45682 + V45682,Sky Blue Enterprises,1001 W. 45th St. Ste B-1,Chicago,IL,60609,,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Off-Premise Freezing - Meat, Off-Premise Freezing - Poultry, Poultry Processing, Voluntary Processing - Poultr","",50,5003,Small,4,,true
+P45687,M45687 + P45687,Meat Palace,640 Atkins Avenue,Brooklyn,NY,11208,2016-12-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6018,Very Small,3,,true
+P45690,M45690 + P45690,Selim's Doner Kebap House,"11999 Plano Road, Suite 190",Dallas,TX,75243,2015-10-09 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4024,Very Small,2,,true
+P45754,M45754 + P45754,El Churry,CAR 1 R842 K1 H3 INT BO CAIMITO,SAN JUAN,PR,00926,,"Meat Processing, Poultry Processing",EL CHURRY,85,8544,Very Small,2,,true
+P45769,M45769 + P45769,Colorado Native Foods,4823 Lima St,Denver,CO,80239,,"Meat Processing, Poultry Processing","",15,1514,Small,3,,true
+P45819,P45819,King and Sons Poultry Service,8091 Horatio Harris Creek Rd,Bradford,OH,45308,2020-03-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",King's Poultry Farm,50,5032,Very Small,3,4,true
+P45839,P45839,Harrison's Poultry Farm,1201 Waukegan Rd.,Glenview,IL,60025,,Poultry Processing,"",50,50,Very Small,2,,true
+P45855,M45855 + P45855,Interstate Foods,310 South Long Beach Blvd.,Compton,CA,90221,,"Meat Processing, Poultry Processing","",5,507,Small,4,,true
+P45884,M45884 + P45884,Chef Creations,301 Cash Memorial Blvd.,Forest Park,GA,30297,,"Meat Processing, Poultry Processing",State Processors LLC,85,8505,Small,3,,true
+P45888,M45888 + P45888,Master Sausage,4085H Lb Mcleod Rd.,Orlando,FL,32811,2017-06-02 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,8527,Very Small,2,,true
+P45891,M45891 + P45891,Kassian Farms,500 East 132nd Street,Bronx,NY,10454,,"Meat Processing, Poultry Processing","",60,6017,Small,2,,true
+P45910,P45910,Sanderson Farms,2076 NC HIGHWAY 20,St Pauls,NC,28384,2017-06-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8010,Large,5,5,true
+P45919,M45919 + P45919,Circle C Farm Abattoir & Butcher Shop,951 Morris Taylor Rd.,Felda,FL,33930,2018-07-09 00:00:00 UTC,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",85,8533,Very Small,2,3,true
+P460,P460 + V460,Jaindl Turkey Sales,3150 Coffeetown Road,Orefield,PA,18069,2013-12-08 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter","",60,6040,Small,3,4,true
+P46027,P46027,Foundation Food Group,2085 Industrial Drive,Gainesville,GA,30504,,Poultry Processing,"",85,85,Small,4,,true
+P4602A,P4602A,New Market Poultry,145 EAST OLD CROSS ROAD,NEW MARKET,VA,22844,,"Poultry Processing, Poultry Slaughter","",80,8008,Small,5,4,true
+P46070,M46070 + P46070,Marble City Meats,514 Odena Road North,Sylacauga,AL,35150,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",90,90,Very Small,3,3,true
+P46089,M46089 + P46089 + V46089,Caribbean Crescent,1430 Desoto Road,Baltimore,MD,21230,2020-09-09 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing","",80,8014,Small,3,,true
+P46091,P46091,Ozark Mountain Poultry,1810 St. Louis Street,Batesville,AR,72501,2018-07-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Forester Farmer's Market; OMP Foods; OMP Processing; Ozark Mountain Poultry, Inc.",35,3513,Large,5,5,true
+P46166,P46166 + V46166,Brummel Poultry Processing,3309 W. Rock Falls Rd.,Rock Falls,IL,61071,,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","",50,50,Very Small,2,3,true
+P46183,P46183,Lotus Poulty,598 Monterey Pass Road,Monterey Park,CA,91754,,Poultry Processing,"",5,514,Very Small,4,,true
+P46205,M46205 + P46205 + V46205,Dakota Provisions - West,2020 Center Street West,Huron,SD,57350,2018-02-05 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing","Dakota Provisions; Dakota Provisions, LLC",25,2535,Small,4,,true
+P46213,P46213,Cobb Creek Poultry,143 HCR 3107,Hillsboro,TX,76645,,"Poultry Processing, Poultry Slaughter","",40,4033,Very Small,2,3,true
+P46230,M46230 + P46230,Greenfield Foods,502 Boundary Blvd.,Algona,WA,98001,2017-08-09 00:00:00 UTC,"Meat Processing, Poultry Processing","",15,1526,Small,3,,true
+P46231,M46231 + P46231,The Hot Pollo,1301 S. Sunkist St.,Anaheim,CA,92806,,"Meat Processing, Poultry Processing","",5,521,Small,4,,true
+P46248A,P46248A,Wabash Poultry Processing,107 N. Center,Forrest,IL,61741,2019-05-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Slagel Family Meats Inc.,50,50,Very Small,2,3,true
+P46255,P46255,RFC,700 South Wood Avenue,Florence,AL,35630,2017-11-09 00:00:00 UTC,Poultry Processing,Gemstone; Gemstone Foods; RCF; RCF   LLC,90,9010,Small,4,,true
+P46307A,M46307A + P46307A,Cascun Farm,1294 Route 12,Greene,NY,13778,2021-09-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6028,Small,3,,true
+P46319,M46319 + P46319,Teaster,2000 N. Loop Rd.,Alameda,CA,94502,2019-08-05 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,511,Very Small,2,,true
+P46338,P46338,Allen Harim Foods,29984 Pinnacle Way,Millsboro,DE,19966,,Poultry Processing,"",80,8017,Small,4,,true
+P46370,M46370 + P46370 + V46370,Porthos Packaging,600 Green Lane,Union,NJ,07083,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Slaughter - Meat, Voluntary Slaughter - Rabbit","",80,8016,Very Small,3,,true
+P46374,P46374,Sanderson Farms - Tyler Processing Division,13523 FM 2015,Tyler,TX,75708,2019-07-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Sanderson Farms, Inc.",40,4029,Large,5,5,true
+P4653,M4653 + P4653,A.A. Rubashkin & Sons,4310 14th Ave,Brooklyn,NY,11219,,"Meat Processing, Poultry Processing","",60,6018,Small,3,,true
+P4653A,M4653A + P4653A + V4653A,Agri Star Meat and Poultry,220 West Street,Postville,IA,52162,,"Certification - Export, Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter",Aaron's Beef; Agriprocessors; Iowa Best Beef; Shor Harbor,25,2529,Large,5,4,true
+P46563,M46563 + P46563,Madina Traders,181 Shore Court,Burr Ridge,IL,60527,,"Meat Processing, Poultry Processing",Canaan Foods; Madina Foods; Qasri Hills; Tihama Hills,50,5006,Small,4,,true
+P46617,M46617 + P46617,Milestones Foods,5366 Dixie Industrial Drive,Lake City,GA,30260,,"Meat Processing, Poultry Processing","",85,8505,Small,3,,true
+P46658,M46658 + P46658,Central Protein Provisioners,1051 Garrett Parkway,Lewisburg,TN,37091,,"Meat Processing, Poultry Processing","",90,9029,Small,2,,true
+P46672,P46672,Norman W. Fries,575 Industrial Park Road,Sylvania,GA,30467,,Poultry Processing,Claxton Poultry Farms,85,8509,Small,5,,true
+P46689,M46689 + P46689,Custom Cut Solutions,102 Crow St.,Albertville,AL,35950,,"Meat Processing, Poultry Processing","",90,9012,Small,5,,true
+P468,P468,Peco Foods,625 South Allen,Batesville,AR,72501,2011-01-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",35,3513,Large,5,5,true
+P46826,P46826,Shenandoah Valley Organic,862 N. Liberty Street,Harrisonburg,VA,22802,,"Poultry Processing, Poultry Slaughter","",80,8008,Small,4,5,true
+P46835,M46835 + P46835,Megas Yeeros,165 Chubb Avenue,Lyndhurst,NJ,07071,2018-06-12 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,8023,Very Small,4,,true
+P4686,M4686 + P4686 + V4686,Arctic Foods USA,251 E Washington Avenue,Washington,NJ,07882,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Rabbit","",80,8016,Small,1,,true
+P46870,M46870 + P46870,Butterball,1000 E. Central Avenue,Raeford,NC,28376,,Poultry Processing,"",80,8010,Large,5,,true
+P46894,M46894 + P46894,Magnolia Beef Holdings,137 INDUSTRIAL AVENUE,HASBROOK HEIGHTS,NJ,07604,2019-10-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,8023,Very Small,2,,true
+P46897,P46897,Ihsan Farms,30931 PARK DRIVE,PRINCESS ANNE,MD,21853,2016-08-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8017,Small,4,4,true
+P46910,M46910 + P46910 + V46910,B&R Meat Processing,633 N. Devils Den Rd.,Winslow,AR,72959,2018-01-05 00:00:00 UTC,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter, Voluntary Processing - Meat, Voluntary Slaughter - Meat","",35,3505,Very Small,2,3,true
+P46922,M46922 + P46922,Global Foods Group,245 Quality Dr.,Clinton,AR,72031,,"Meat Processing, Poultry Processing","",35,3502,Very Small,2,,true
+P46942,M46942 + P46942,Maple Wind Farm,1149 East Main Street,Richmond,VT,05462,,"Meat Processing, Poultry Processing, Poultry Slaughter","",60,6026,Small,2,3,true
+P46946,M46946 + P46946,Shop Packaging,49 Hassey Street,New Bedford,MA,02740,,"Meat Processing, Poultry Processing","",60,6029,Very Small,,,true
+P46953,M46953 + P46953,Fresh Advantage/Demakes Enterprises,18 Electronics Avenue,Danvers,MA,01923,,"Meat Processing, Poultry Processing",Old Neighborhood Foods; Thin 'n Trim; Waterhill Naturals; Waterhill Organancs,60,6008,Small,4,,true
+P46966,M46966 + P46966,Encore Sausage Company,3137 Pennsy Drive,Hyattsville,MD,20785,,"Meat Processing, Poultry Processing","",80,8006,Small,3,,true
+P47016,P47016,The Best Dressed Chicken,262 Speigner Road,Ward,SC,29166,,"Poultry Processing, Poultry Slaughter","",85,8521,Small,5,5,true
+P47039,M47039 + P47039,QC Poultry,1111 W. Olympic Blvd.,Montebello,CA,90640,2021-06-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,514,Small,4,,true
+P4735,P4735,Somerville Live Poultry,621 Cambridge St,Cambridge,MA,02141,0098-08-24 00:00:00 UTC,Poultry Processing,"",,,,,,true
+P47462,M47462 + P47462,Colorado Food Enterprises,6400 Broadway Unit 11,Denver,CO,80221,,"Meat Processing, Poultry Processing","",15,1514,Small,2,,true
+P47472,P47472,Pure Pasture Packing,29612 Pony Path Road,Sedalia,MO,65301,,"Poultry Processing, Poultry Slaughter","",35,3508,Very Small,2,3,true
+P47486,M47486 + P47486,Ranchers Processing,900 Airport Blvd.,Mendota,CA,93640,,"Meat Processing, Poultry Processing","",5,505,Small,4,,true
+P47579,M47579 + P47579,Tyson Foods,550 Tyson Boulevard,Humboldt,TN,38343,,"Meat Processing, Poultry Processing, Poultry Slaughter","Delightful Farms; Howard County; Nature Raised Farms; Prospect Farms; Tyson Farms, Inc; Tyson Sales and Distribution, Inc",90,9023,Large,4,4,true
+P47591,P47591,Custom Craft Poultry,4701 Asher Avenue,Little Rock,AR,72204,,Poultry Processing,"",35,3520,Large,4,,true
+P476,P476,Pilgrim's Pride,616 Kingsbridge Road,Carrollton,GA,30117,,"Poultry Processing, Poultry Slaughter","",85,8505,Large,5,5,true
+P4800,M4800 + P4800 + V4800,Eddy Packing,404 Airport Rd,Yoakum,TX,77995,2020-12-06 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing","",40,4030,Large,5,,true
+P481,P481,Tyson Foods,671 Randall Wobbe Ln,Springdale,AR,72764,,"Poultry Processing, Poultry Slaughter","ALDI Inc.; Kirkwood; Lucerne Foods Inc.; Nature Raised Farms; Patti Jean; Prospect Farms; Sysco Corporation; The Kroger Company; TSD Sales & Distribution; Tyson Poultry, Inc.",35,3512,Small,4,5,true
+P48119,M48119 + P48119,Custom Craft Poultry,3054 East Main,Batesville,AR,72501,,"Meat Processing, Poultry Processing",Batesville Cold Storage,35,3513,Small,4,,true
+P48130,M48130 + P48130,GFP Processors,3330 Junction Highway,Ingram,TX,78025,2018-06-11 00:00:00 UTC,"Meat Processing, Poultry Processing","",40,4040,Small,4,,true
+P48209,M48209 + P48209,Wholesum Foods,1877 Penn Mar Ave.,South El Monte,CA,91733,,"Meat Processing, Poultry Processing","",5,506,Very Small,3,,true
+P48235,M48235 + P48235 + V48235,Crescent Specialty Foods,30 Central Avenue,Farmingdale,NY,11735,,"Certification - Export, Meat Processing, Poultry Processing",Copelli Finest; Crescent Cold Storage,60,6017,Very Small,4,,true
+P48272,M48272 + P48272,Inland Seafood,2700 Avenue D,Birmingham,AL,35218,2019-08-03 00:00:00 UTC,"Meat Processing, Poultry Processing",American Butcher,90,9001,Very Small,2,,true
+P4828,M4828 + P4828,A.I. Foods,1700 North Soto St.,Los Angeles,CA,90033,,"Meat Processing, Poultry Processing",AI Kitchen Specialties; Rizal Brand,5,515,Small,3,,true
+P48304,P48304,Lincoln Premium Poultry,1325 E. Cloverly Road,Fremont,NE,68025,,"Poultry Processing, Poultry Slaughter","",15,1516,Large,5,5,true
+P48308,P48308,J-Bar Poultry Processing,440 Ada Rd,New Plymouth,ID,83655,2018-06-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",15,1507,Very Small,2,3,true
+P4846,M4846 + P4846,Heatherfield Foods,1150 W Brooks St.,Ontario,CA,91762,,"Meat Processing, Poultry Processing",Villa Roma Sausage,5,506,Small,4,,true
+P4847,M4847 + P4847,Win Fat,700 Monterey Pass Road,Monterey Park,CA,91754,2010-11-05 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,514,Small,3,,true
+P48471,P48471,Soulshine Farms,2411 White Sulphur Road,Gainesville,GA,30501,,Poultry Processing,"",85,8513,Very Small,4,,true
+P486,P486,Simmons Prepared Foods,1001 East Main Street,Siloam Springs,AR,72761,,Poultry Processing,"Blue Ribbon Farms; Simmons Foods, Inc; Simmons Industries, Inc.; Simmons Poultry Farms, Inc.",35,3518,Small,4,,true
+P4871,M4871 + P4871,Golden Eagle Services,8329 Long Beach Blvd.,South Gate,CA,90280,,Poultry Processing,"",5,507,Small,2,,true
+P4873,M4873 + P4873,Commercial Meat Company,7820 Industry Avenue,Pico Rivera,CA,90660,2020-03-09 00:00:00 UTC,"Meat Processing, Poultry Processing","",5,514,Small,3,,true
+P4894,M4894 + P4894 + V4894,Apple Valley Farms,1828 E. Hedges Avenue,Fresno,CA,93703,2019-12-11 00:00:00 UTC,"Animal Foods Inspection, Meat Processing, Poultry Processing",Cencal Foods LLC,5,505,Small,3,,true
+P492,P492,Buckhead Meat & Seafood Mid-Atlantic,1920 Stanford Ct.,Landover,MD,20785,0020-08-31 00:00:00 UTC,Poultry Processing,Metropolitan Poultry Co.,,,,,,true
+P4934,M4934 + P4934,T&J Sausage Kitchen,2831 E. Miraloma ave,Anaheim,CA,92806,,"Meat Processing, Poultry Processing","",5,521,Small,4,,true
+P4985,M4985 + P4985,Modesto Food Distributors,7601 El Camino Real,Colma,CA,94014,,"Meat Processing, Poultry Processing","",5,519,Small,3,,true
+P4989,M4989 + P4989 + V4989,K&M Meat Packing,2443 E. 27th Street,Vernon,CA,90058,2004-02-12 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Processing - Rabbit","K&M Food Service, Inc.; K&M Meat Company Inc.; Primetime Steaks.com",5,503,Small,3,,true
+P509,P509,Koch Foods,123 South Fairmont Ave,Morristown,TN,37815,,"Poultry Processing, Poultry Slaughter","",90,9021,Small,5,5,true
+P5097,M5097 + P5097,Bonollo Provisions,55 CLARKSON STREET,PROVIDENCE,RI,02908,,"Meat Processing, Poultry Processing","",60,6029,Small,3,,true
+P510,P510,House of Raeford Farms,3333 Highway 117 South,Rose Hill,NC,28458,,"Poultry Processing, Poultry Slaughter","",80,8005,Large,5,5,true
+P511,P511,Butterball,307 Dodgen Place,Ozark,AR,72949,,"Poultry Processing, Poultry Slaughter",Carolina Turkey,35,3505,Large,5,5,true
+P51179,P51179 + V51179,Sanderson Farms,320 Sanderson Farms Pkwy,Palestine,TX,75803,2017-05-09 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter","",40,4029,Large,5,5,true
+P51255,M51255 + P51255,Natural State Processing,245 Quality Dr,Clinton,AR,72031,,"Poultry Processing, Poultry Slaughter","",35,3502,Very Small,3,4,true
+P51302,M51302 + P51302,Belmont Meats,36 Quarry Road,Paradise,PA,17562,2019-01-08 00:00:00 UTC,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",60,6023,Very Small,2,3,true
+P51345,P51345,Pearl River Foods,1012 Progress Drive,Carthage,MS,39051,2020-12-08 00:00:00 UTC,Poultry Processing,"",90,9004,Small,4,,true
+P51354,M51354 + P51354,Select Cut Meat Processing,1835 S. Canal St.,Chicago,IL,60616,,"Meat Processing, Poultry Processing",Bright Butcher; Smart Cut; Tasty Char Siu,50,5002,Small,4,,true
+P5142,M5142 + P5142,Washington Avenue Poultry,318 Nevins Street,Brooklyn,NY,11215,,Poultry Processing,Altakwa Poultry,60,6024,Very Small,2,,true
+P517,P517,Mar-Jac Poultry-MS,1301 James Street,Hattiesburg,MS,39401,,"Poultry Processing, Poultry Slaughter",Mar-Jac Poultry - MS LLC,90,9009,Large,5,5,true
+P519,P519,Wayne Farms,525 Wayne Drive,Laurel,MS,39440,2017-11-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",90,9009,Large,5,5,true
+P522,P522,Sanderson Farms,1111 North Fir Ave,Collins,MS,39428,,"Poultry Processing, Poultry Slaughter","",90,9009,Large,5,5,true
+P5221,M5221 + P5221,Home Food Services of PA,2092 Farragut Avenue,Bristol,PA,19007,,"Meat Processing, Poultry Processing",Agostino Gourmet; Passanante Brothers; Prime Time Foods,60,6022,Small,2,,false
+P5268,M5268 + P5268,Cola Foods,7 Industrial Road,Cranston,RI,02920,2020-01-09 00:00:00 UTC,"Meat Processing, Poultry Processing","Giovanni; Lincoln Packing, LLC; Marcello Sausage Company",60,6029,Small,3,,true
+P5275,M5275 + P5275,Lupo's Quality Deli,625 Dickson Street,Endicott,NY,13760,,"Meat Processing, Poultry Processing","Sam A. Lupo & Sons, Inc.",60,6028,Small,3,,true
+P529,P529 + V529,Pilgrim's Pride,209 North Third Street,Arcadia,WI,54612,,"Off-Premise Freezing - Poultry, Poultry Processing, Poultry Slaughter",Gold'n Plump; Pilgrims,25,2522,Small,5,5,true
+P5292,M5292 + P5292,G&L Meat Company,111 Gateway Park Drive,North Syracuse,NY,13212,2018-11-07 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6028,Small,3,,true
+P533,P533,FreeBird Chicken,220 North Center Street,Fredericksburg,PA,17026,,"Poultry Processing, Poultry Slaughter","FreeBird Chicken; Poultry Holdings, LLC; Table Trust Brands+",60,6023,Small,4,5,true
+P533A,P533A,Hain Pure Protein - FreeBird West,2609 Route 22,Fredericksburg,PA,17026,2019-06-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",60,6023,Small,4,,true
+P5351,M5351 + P5351,Martin's Specialty Sausage Company,150 Harmony Road,Mickleton,NJ,08056,2002-11-02 00:00:00 UTC,"Meat Processing, Poultry Processing","",80,8012,Small,3,,true
+P544,M544 + P544,Jennie-O Turkey Store,1129 Main Street East,Melrose,MN,56352,2019-04-12 00:00:00 UTC,"Meat Processing, Poultry Processing, Poultry Slaughter","",25,2503,Large,5,5,true
+P548,P548,JCG Foods of Alabama,764 George Cagle Drive,Collinsville,AL,35961,,"Poultry Processing, Poultry Slaughter",Cagle's ; JCG Foods; Koch Foods,90,9012,Large,5,5,true
+P549,M549 + P549,Tyson Foods,3424 Cambridge,Springdale,AR,72762,,"Meat Processing, Poultry Processing","",35,3512,Small,2,,true
+P551,M18866 + P551,Jennie-O Turkey Store Sales,2505 Willmar Avenue SW,Willmar,MN,56201,2009-09-06 00:00:00 UTC,"Meat Processing, Poultry Processing, Poultry Slaughter","Festive Brand; Hormel Foods Corporation; Jennie-O; Jennie-O Foods, Inc.; Jennie-O Turkey Store, Inc.; Jerome Foods, Inc.; Jerome's Golden Glo; Northwestern Deli; The Turkey Store, Inc.; West Central Turkeys, LLC",25,2504,Large,5,4,true
+P5533,M5533 + P5533 + V5533,West Liberty Foods,207 W. Second Street,West Liberty,IA,52776,,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter",Iowa Turkey Growers Coop; West Liberty Foods,25,2505,Large,5,4,true
+P5542A,M5542A + P5542A,Tur-Pak Foods,6201 MacArthur Street,Sioux City,IA,51111,1995-11-09 00:00:00 UTC,"Meat Processing, Poultry Processing","Co-Pak Foods, Inc.; Kustom Pak Foods. Ltd.; Marbac, Inc.; Pak Fabricators, Ltd.",25,2523,Small,4,,true
+P5562,M5562 + P5562 + V5562,S&S Quality Meats,1542 Highway 99 South,Emporia,KS,66801,,"Certification - Export, Identification - Meat, Identification - Poultry, Meat Processing, Poultry Processing, Voluntary Processing - Meat",Fanestil Meats; Fanestil Packing Company,35,3509,Small,3,,true
+P559,P559,Tyson Foods,6600 Hwy. 431 South,Albertville,AL,35950,2020-04-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Tyson Farms Inc,90,9012,Large,5,5,true
+P56,M56 + P56,Pilgrim's Pride,330 CO-OP DRIVE,TIMBERVILLE,VA,22853,,"Meat Processing, Poultry Processing, Poultry Slaughter","Pilgrims/JBS; ROCKINGHAM POULTRY, INC.; WAMPLER FOODS, INC.",80,8008,Large,5,5,true
+P5787,P5787,Pilgrim's Pride,7088 Hwy 1 Bypass,Natchitoches,LA,71457,,"Poultry Processing, Poultry Slaughter","",40,4014,Large,5,5,true
+P579,M579 + P579 + V579,Jennie-O Turkey Store,1116 NW 4th Avenue,Faribault,MN,55021,2019-04-12 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter","Festive Brand; Hormel Foods Corporation; Jennie-O; Jennie-O Foods, Inc.; Jennie-O Turkey Store, Inc.; Jerome Foods, Inc.; Jerome's Golden Glo; Norwestern Deli; The Turkey Store, Inc.; West Central Turkeys, LLC",25,2512,Large,5,4,true
+P5819,M5819 + P5819 + V5819,Gourmet Ranch,3902 N. Main Street,Houston,TX,77009,2011-05-07 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat","",40,4026,Small,4,,true
+P5837,M5837 + P5837,Simmons Prepared Foods,#5 Main Street,Van Buren,AR,72956,,"Meat Processing, Poultry Processing","Blue Ribbon Farms; Simmons Foods, Inc; Simmons Industries, Inc.; Simmons Poultry Farms, Inc",35,3505,Large,5,,true
+P584,P584,Pilgrim's Pride,1107 Monticello Road,Mount Pleasant,TX,75456,2021-11-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",County Post,40,4027,Large,5,5,true
+P5840,P5840,Simmons Prepared Foods,8425 Suite A Hwy 45,Fort Smith,AR,72916,,Poultry Processing,"Blue Ribbon Farms; Simmons Foods, Inc; Simmons Industries, Inc.; Simmons Poultry Farms, Inc.",35,3505,Small,4,,true
+P5842,M5842 + P5842 + V5842,Tyson Foods,600 N. Berry Street,Springdale,AR,72762,,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter","Holly Farms; McCarty Foods; Tyson Poultry, Inc.",35,3512,Large,5,5,true
+P5916,M5916 + P5916,Longhini,41 Longhini Lane,New Haven,CT,06519,,"Meat Processing, Poultry Processing","",60,6006,Small,4,,true
+P5933,P5933,Puritan Foods,17 Foodmart Road,Boston,MA,02118,0017-02-21 00:00:00 UTC,Poultry Processing,Pure Pack,,,,,,true
+P6,M17250 + P6 + V6,Tyson Foods,67240 Main Street,Blountsville,AL,35031,,"Poultry Processing, Poultry Slaughter","TSD Sales & Distribution; Tyson Farms, Inc",90,9010,Large,5,5,true
+P6058,P6058,Perdue Foods,1000 Jason Lane,Mount Vernon,WA,98273,,"Poultry Processing, Poultry Slaughter",Draper Valley Farms; Ranger; Roxy,15,1530,Small,4,5,true
+P607,P607,Tyson Foods,212 E. Elm Street,Rogers,AR,72756,2019-03-12 00:00:00 UTC,Poultry Processing,"Tyson Poultry, Inc.",35,3518,Large,4,,true
+P6070,M6070 + P6070,Los Angeles Poultry,4816 Long Beach Avenue,Los Angeles,CA,90058,1996-10-06 00:00:00 UTC,Poultry Processing,DeeDee's Poultry; Preferred Poultry; Sauschick,5,535,Small,4,,true
+P6090,M6090 + P6090,Roger's Poultry,2020 E 67th St.,Los Angeles,CA,90001,,"Meat Processing, Poultry Processing","",5,535,Small,3,,true
+P6119,M6119 + P6119,C.R. Meats,994 West MacArthur Blvd.,Oakland,CA,94608,,"Meat Processing, Poultry Processing",Manna Foods,5,511,Very Small,3,,true
+P6124,M6124 + P6124 + V6124,Compass Foods,601 Zeff Road,Modesto,CA,95351,2020-02-07 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing","",5,509,Small,4,,true
+P6137,M6137 + P6137,Foster Farms,843 Davis St.,Livingston,CA,95334,,"Poultry Processing, Poultry Slaughter","",5,508,Large,5,5,true
+P6137A,P6137A,Foster Farms,2960 Cherry St.,Fresno,CA,93706,,"Poultry Processing, Poultry Slaughter","",5,505,Large,5,5,true
+P6153,M6153 + P6153,Seaport Meat Co.,2533 Folex Way,Spring Valley,CA,91978,,"Meat Processing, Poultry Processing","",5,518,Small,3,,true
+P6164A,P6164A,Foster Farms,1700 South 13th Avenue,Kelso,WA,98626,,"Poultry Processing, Poultry Slaughter",Sunland Poultry Company,15,1527,Large,5,5,true
+P622,P622,Tyson Foods,2023 Hasty Street,Monroe,NC,28110,2018-05-09 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Tyson Farms, Inc. & TSD Sales & Distribution",80,8003,Large,5,5,true
+P6239,M6239 + P6239 + V6239,Shamrock Food,2540 N 29th Ave.,Phoenix,AZ,85009,2004-08-12 00:00:00 UTC,"Meat Processing, Poultry Processing, Voluntary Processing - Meat","",5,504,Small,3,,true
+P6267,M6267 + P6267,Interbay Food Company,19210  144th N. E.,Woodinville,WA,98072,2009-11-06 00:00:00 UTC,"Meat Processing, Poultry Processing",Goetz Western Meats,15,1526,Small,2,,true
+P6308,M6308 + P6308,Zenner's Quality Meat Products,2131 NW Kearney Street,Portland,OR,97210,,"Meat Processing, Poultry Processing",Zenner's Sausage Company,15,1509,Small,3,,true
+P6403A,M17217A + P6403A + V17217A,Plymouth Poultry,"3416-B St. N.W., Suite C",Auburn,WA,98001,,"Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat","",15,1526,Very Small,4,,true
+P646,P646,JCG Foods of Georgia,14075 GA Hwy 116 East,Pine Mt Valley,GA,31823,,"Poultry Processing, Poultry Slaughter",Cagle's; JCG; Koch Foods,85,8505,Large,5,5,true
+P6504,P6504,Peco Foods,3701 Reese Phifer Avenue,Tuscaloosa,AL,35401,,"Poultry Processing, Poultry Slaughter","",90,9001,Large,5,5,true
+P6505,P6505,Norman W. Fries,8816 Highway 301 North,Claxton,GA,30417,,"Poultry Processing, Poultry Slaughter",Claxton Poultry Farms,85,8509,Large,5,5,true
+P6510,P6510,Peco Foods,95 Commerce Drive,Bay Springs,MS,39422,,"Poultry Processing, Poultry Slaughter",Peco Farms Inc,90,9024,Large,5,5,true
+P6519B,P6519B,Coastal Processing,1670 FORSTMANN Rd.,Louisville,GA,30434,,"Poultry Processing, Poultry Slaughter","",85,8503,Small,5,5,true
+P6529,P6529,Koch Foods,3500 West Blvd.,Montgomery,AL,36108,2021-08-07 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",90,9007,Large,5,5,true
+P6574,M6574 + P6574,Grand Western Brands,240 S.W. 32nd Street,Fort Lauderdale,FL,33315,,"Meat Processing, Poultry Processing","",85,8535,Small,3,,true
+P6616,P6616 + V6616,Peco Foods,15292 Highway 21 South,Sebastopol,MS,39359,,"Certification - Export, Poultry Processing, Poultry Slaughter","",90,9024,Large,5,5,true
+P6638,P6638,Pilgrim's Pride,4693 County Road 636,Enterprise,AL,36330,,"Poultry Processing, Poultry Slaughter",Gold 'N Plumb; Just Bare Chicken; Pierce Foods,90,9007,Large,5,5,true
+P6640,M6640 + P6640,Kabobs Aquisition,5423 North Lake Drive,Lake City,GA,30260,2009-09-10 00:00:00 UTC,"Meat Processing, Poultry Processing",Albert Uster (AUI); Appetizer's USA; Babeth's Feast; Beacon Hill; Better Food Concepts Occasions; Chesapeake; Concierge; Holiday Foods; Honey Baked; Imperial Finest; Kansas City Steaks; Mackenzie; Oakstove ; Royal Pacific; Savoir Fare; Seacliff,85,8505,Small,3,,true
+P6645,M6645 + P6645,Carolina Fresh Foods,159 N. Chase St.,Florence,SC,29501,2018-05-12 00:00:00 UTC,"Meat Processing, Poultry Processing",Carolina Fresh Foods,85,8522,Small,4,,true
+P6651,P6651,Tyson Foods,901 W. Jackson Street,Shelbyville,TN,37160,,"Poultry Processing, Poultry Slaughter","Delightful Farms; Howard County Farms; TSD Sales and Distribution; Tyson Farms, Inc.",90,9029,Large,5,5,true
+P6666,P6666,Koch Foods,501 Paden Road,Gadsden,AL,35903,,"Poultry Processing, Poultry Slaughter","",90,9012,Large,5,5,true
+P667,M667 + P667,Mountaire Farms,55 Hosier St.,Selbyville,DE,19975,2020-11-09 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Mountaire; Mountaire Farms; Mountaire Farms Inc.,80,8017,Large,5,5,true
+P6692,M6692 + P6692,Marvel International,Amelia Distribution Center,Guaynabo,PR,00968,,"Meat Processing, Poultry Processing","Marvel Specialties, Inc.",85,8544,Small,3,,true
+P671,M1600 + P671,Sanderson Farms Foods Division,4418 Mangum Drive,Flowood,MS,39232,2019-09-05 00:00:00 UTC,Poultry Processing,Covington Farms; Spring Farms,90,9004,Small,4,,true
+P6717,M6717 + P6717,Eurocaribe Packing,Calle A Lote #23 Cabo Caribe Industrial Park,Vega Baja,PR,00694,,"Meat Processing, Poultry Processing",Atalanta; Burger King; Congusto; Cotsco; Econo; El Serranito; Great value; Pueblo; Sam's; SuperMax,85,8540,Small,4,,true
+P6719,P6719 + V6719,Pilgrim's Pride,1300 Market Street,Chattanooga,TN,37402,,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry",Country Pride,90,9027,Small,4,,true
+P6744,M6744 + P6744,Segarra's Sausage,Road #420 Km1 Hm 6,Moca,PR,00676,,"Meat Processing, Poultry Processing","",85,8540,Very Small,3,,true
+P6765,M6765 + P6765,Wichita Packing,340 North Oakley Boulevard,Chicago,IL,60612,2017-07-06 00:00:00 UTC,"Meat Processing, Poultry Processing","",50,5002,Small,4,,true
+P677,M1383 + P677,Praters Foods,2206 114th Street,Lubbock,TX,79423,2011-08-04 00:00:00 UTC,"Meat Processing, Poultry Processing",Prater's Foods,40,4028,Small,3,,true
+P687,P687,House of Raeford,410 Sunset Boulevard,West Columbia,SC,29169,,"Poultry Processing, Poultry Slaughter","",85,8522,Large,5,5,true
+P689,P689 + V689,Cooks Venture Poultry Jay,357 N. Main Street,Jay,OK,74346,,"Certification - Export, Poultry Processing, Poultry Slaughter",Cooks Venture,40,4042,Small,5,4,true
+P6916,M6916 + P6916 + V6916,Amity Packing,4220 S. Kildare Ave.,Chicago,IL,60632,,"Certification - Export, Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat, Voluntary Processing - Rabbit","",50,5006,Small,5,,true
+P6934,M6934 + P6934,Stap,275 E. Hintz Rd.,Wheeling,IL,60090,,"Meat Processing, Poultry Processing",Anderson Farms,50,5004,Very Small,2,,true
+P7011A,M7011A + P7011A + V7011,Creative Specialty Food Solutions,4845 Yale Street,Houston,TX,77018,,"Certification - Export, Meat Processing, Poultry Processing","",40,4026,Small,2,,true
+P7044,P7044,Tyson Foods,1484 NE Loop,Carthage,TX,75633,,"Poultry Processing, Poultry Slaughter","Tyson Poultry, Inc.",40,4029,Large,5,5,true
+P7048,M7048 + P7048,Tyson Foods,802 S. 28th Street,Van Buren,AR,72956,2014-02-07 00:00:00 UTC,"Meat Processing, Poultry Processing","Tyson Poultry, Inc.",35,3505,Large,5,,true
+P705,P705,Pilgrim's Pride,401 South 3rd Street,DeQueen,AR,71832,2021-08-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Pilgrim's,35,3514,Large,5,5,true
+P7085,P7085 + V7085,Tyson Foods,Highway 259 South,Broken Bow,OK,74728,2020-06-03 00:00:00 UTC,"Certification - Export, Off-Premise Freezing - Poultry, Poultry Processing, Poultry Slaughter","Arkie Chicken; Brennan Packing Company, Inc.; Carroll County; Cavanaugh Lakeview Farms; Choctaw Maid; Colonia; Delightful Farms; Delta Valley; Eastwood Foods; Gold Leaf; Greenwich; Holly Farms; Howard County; Hudson Foods, Inc.; Janet Davis; Lady Aster Food Service; McCarty Foods; Ole Carolina Brand & Design; Patti Jean; Prospect Farms; Spare Time; Tyson; Victor F. Weaver Company; Washington Creamery",40,4043,Large,5,5,true
+P7089,M7089 + P7089,Tyson Foods,1001 Stoddard,Dexter,MO,63841,2021-10-03 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Tyson Chicken Inc,35,3513,Large,5,5,true
+P7091,P7091,Pilgrim's Pride,1000 Pilgrim Street,Mount Pleasant,TX,75455,2021-04-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",40,4027,Small,5,5,true
+P7091A,M7091A + P7091A,Pilgrim's Pride,1000 Pilgrim's Street,Mount Pleasant,TX,75455,,"Meat Processing, Poultry Processing",Country Pride; Gold Kist Farms; Pierce ; Pilgrim's; Sweet Georgia,40,4027,Large,5,,true
+P7100,M7100 + P7100 + V7100,Tyson Foods,100 East Cassady,Nashville,AR,71852,,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter","Tyson Poultry, Inc.",35,3514,Large,5,5,true
+P7101,P7101,Tyson Foods,301 East Cherry Street,Clarksville,AR,72830,2020-12-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","TSD Sales and Distribution; Tyson Poultry, Inc.",35,3520,Large,5,5,true
+P7156,P7156 + V7156,Tyson Foods,275 County Road 278,Hope,AR,71801,,"Certification - Export, Poultry Processing, Poultry Slaughter","Tyson Chicken, Inc.",35,3514,Large,5,5,true
+P7174,P7174,Butterball,1294 N. College St.,Huntsville,AR,72740,,"Poultry Processing, Poultry Slaughter",Carolina Turkey,35,3502,Large,5,4,true
+P72,P72,Tyson Foods,1291 N Hwy. 7,Dardanelle,AR,72834,2019-03-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","TSD Sales and Distribution; Tyson Food Service; Tyson Poultry, Inc.; Tyson Sales and Distribution, Inc.",35,3520,Large,5,5,true
+P7212,M10 + P7212 + V10,Buckhead Meat & Seafood of Houston,10310 Greens Crossing Blvd.,Houston,TX,77038,,"Certification - Export, Meat Processing, Poultry Processing",Buckhead Meat; Buckhead Meat of Houston; Freedman Foods; Freedman Foodservice,40,4026,Small,4,,true
+P7231,M7231 + P7231,HEB Meat Plant,4710 N. Pan Am Expressway,San Antonio,TX,78218,2020-01-09 00:00:00 UTC,"Meat Processing, Poultry Processing",Parkway Manufacturing,40,4040,Large,5,,true
+P7264,P7264 + V7264,Sanderson Farms,13111 Hwy 190 West,Hammond,LA,70401,,"Certification - Export, Poultry Processing, Poultry Slaughter","",40,4015,Large,5,5,true
+P727,P727 + V727,Simmons Prepared Foods,10700 South State Hwy 43,South West City,MO,64863,,"Certification - Export, Food Inspection, Identification - Poultry, Poultry Processing, Poultry Slaughter","Blue Ribbon Farms; Simmons Foods, Inc.; Simmons Industries, Inc.; Simmons Poultry Farms, Inc.",35,3518,Large,5,5,true
+P7271,M7271 + P7271,C&L Foods,1802 E. Levee,Dallas,TX,75207,2015-02-06 00:00:00 UTC,"Meat Processing, Poultry Processing",C & L Foods Inc.,40,4024,Small,3,,true
+P7342,P7342 + V7342,Wayne Farms,808 Ross Clark Circle NE,Dothan,AL,36303,2019-05-04 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter","",90,9007,Large,5,5,true
+P7345,M7345 + P7345,Butterball,1628 Garner Chapel Road,Mount Olive,NC,28365,,"Poultry Processing, Poultry Slaughter",Carolina Turkeys; Carroll's Farm,80,8015,Large,5,5,true
+P737,M737 + P737,House of Raeford - Wallace Div,253 Butterball Road,Teachey,NC,28464,2018-03-12 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Columbia Farms,80,8005,Large,5,5,true
+P7374,P7374,To-Ricos,Road 14 Km. 48.0 Asomante,Aibonito,PR,00705,,"Poultry Processing, Poultry Slaughter",Chicken Ring Things; Country Post; Country Pride; Country Skillet; Pilgrim's Signature; Rancho Durado; Ring Thins; Rockingham; Round Hill; Shin Valley; Valley Pride; Wampler; Wampler Foods; Wampler Longacre; WOW,85,8544,Small,5,5,true
+P7428,M7428 + P7428 + V7428,Joyce Foods,4787 Kinnamon Rd.,Winston Salem,NC,27103,,"Animal Foods Inspection, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Processing - Rabbit, Voluntary Slaughter - Poultry, Voluntary Slaughter - Rabbit",Joyce Farms,80,8007,Small,2,4,true
+P7429,M7429 + P7429,Hampton Meat Processing,1890 Pembroke Rd.,Hopkinsville,KY,42240,,"Meat Processing, Meat Slaughter, Poultry Processing","",90,9002,Small,3,3,true
+P746,M2277 + P746 + V746,Tyson Foods,3800 Progress Street,North Little Rock,AR,72114,,"Certification - Export, Meat Processing, Poultry Processing","Arkie Chicken; Brennan Packing Co., Inc.; Carroll County; Cavanaugh Lakeview Farms; Choctaw Maid; Colonia; Delightful Farms; Delta Valley; Eastwood Foods; Gold Leaf; Greenwich; Holly Farms; Howard County; Hudson Foods, Inc.; Janet Davis; Lady Aster (Food Service); McCarty Foods; Ole Carolina Brand & Design; Patti Jean; Prospect Farms; Spare Time; Tyson; Victor F. Weaver Co.; Washington Creamery",35,3520,Small,4,,true
+P7460,M7460 + P7460,Waltkoch,1025 Airport Parkway,Gainesville,GA,30501,2011-01-07 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,8513,Small,5,,true
+P7464,M7464 + P7464,F.B. Purnell Sausage Company,6931 Shelbyville Road,Simpsonville,KY,40067,,"Meat Processing, Meat Slaughter, Poultry Processing","",90,9011,Small,4,3,true
+P7470,M7470 + P7470,Mountaire Farms - NC Division,17269 NC Highway 71 North,Lumber Bridge,NC,28357,2020-11-09 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Mountaire Farms of North Carolina,80,8010,Large,5,5,true
+P7485,P7485 + V7485,Wayne Farms,1020 County Road 114,Jack,AL,36346,2019-05-04 00:00:00 UTC,"Certification - Export, Off-Premise Freezing - Poultry, Poultry Processing, Poultry Slaughter","",90,9007,Large,5,5,true
+P7487,P7487,Koch Foods,1826 Cappella Street,Chattanooga,TN,37408,,"Poultry Processing, Poultry Slaughter","",90,9027,Small,5,5,true
+P7567,M7567 + P7567,Wegmans Food Markets,360 Wegmans Market Street,Rochester,NY,14624,,"Meat Processing, Poultry Processing","",60,6009,Small,3,,true
+P757,M757 + P757 + V757,Hillshire Brands,315 Vilas Road,Storm Lake,IA,50588,2017-03-11 00:00:00 UTC,"Certification - Export, Meat Processing, Poultry Processing, Poultry Slaughter","Aidells Sausage Co.; Brennan Packing Co., Inc.; Delightful Farms; Delta Valley; Galileo Foods; Golden Island Jerky Company, Inc.; Prospect Farms; Russer Foods; Sara Lee; Sara Lee Foodservice; TSD Sales and Distribution; Tyson Chicken, Inc.; Tyson Deli, Inc.; Tyson Farms, Inc.; Tyson Food Service; Tyson Fresh Meats, Inc.; Tyson Poultry, Inc.; Tyson Prepared Foods, Inc.; Tyson Sales and Distribution, Inc.; Victor F. Weaver Co.",25,2525,Large,5,4,true
+P758,P758,Tyson Foods,3865 Highway 35 North,Carthage,MS,39051,,"Poultry Processing, Poultry Slaughter","Delightful Farms; Delta Valley; Prospect Farms; TSD Sales & Distribution; Tyson Farms, Inc; Victor F. Weaver",90,9024,Large,5,5,true
+P7632,P7632,Zorro Leasing,900 W. Belgravia,Fresno,CA,93706,2010-11-05 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",5,505,Large,5,5,true
+P764,P764,Perdue Foods,521 Willow St.,Salisbury,MD,21801,2018-07-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8017,Large,5,5,true
+P7669,P7669,Turkey Valley Farms,112 S. 6th St.,Marshall,MN,56258,2019-12-09 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",25,2535,Small,5,4,true
+P768,P768 + V768,Tyson Foods,442 Plant Street,Waldron,AR,72958,2015-05-05 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter","Tyson Poultry, Inc.",35,3514,Large,5,5,true
+P77,M77 + P77,Maid-Rite Specialty Foods,105 Keystone Industrial Park,Dunmore,PA,18512,,"Meat Processing, Poultry Processing","",60,6014,Small,3,,true
+P7760,M7760 + P7760,Jennie-O Turkey Store,1126 West Benson Avenue,Willmar,MN,56201,2019-04-12 00:00:00 UTC,"Meat Processing, Poultry Processing","Festive Brand; Hormel Foods Corporation; Jennie O; Jennie-O Foods Inc.; Jennie-O Turkey Store, Inc.; Jerome Foods, Inc.; Jerome's Golden Glo; Northwestern Deli; The Turkey Store, Inc.; West Central Turkeys, LLC",25,2503,Large,4,,true
+P7769,P7769,Farbest Foods,4689 S. 400 West,Huntingburg,IN,47542,,"Poultry Processing, Poultry Slaughter","",50,5031,Large,5,4,true
+P7834,M7834 + P7834,Premio Foods,609 10th Street,Union City,NJ,07087,,Meat Processing,Appetito Provision Co.; Casa D'Oro; D & B Meats; Family Pride; Pisa; Villa Capri Meats,80,8016,Large,4,,true
+P787,M1698 + P787 + V1698,Schreiber Processing,56-20 59th Street,Maspeth,NY,11378,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat","Alle Processing Corp; Meal Mart; Schreiber Caterers; We ""R"" Kosher",60,6018,Small,4,,true
+P7877A,M7877A + P7877A + V7877,Rastelli,300 Heron Drive,Logan Township,NJ,08085,2013-02-08 00:00:00 UTC,"Meat Processing, Poultry Processing",Rastelli's Fine Foods,80,8012,Small,3,,true
+P7900,M7900 + P7900,Prestige Farms,7120 Orr Road,Charlotte,NC,28213,,Poultry Processing,"",80,80,Small,4,,true
+P7903,P7903,Perdue Foods,22520 Lankford Hiwy.,Accomac,VA,23301,,"Poultry Processing, Poultry Slaughter",CAROLINA FARE; CHEFS CHOICE; COLEMANS; COOKIN GOOD; COUNTRY CORNER; HARVESTLAND; KIRKLAND; PENNYSWORTH; PERDUE; SHENANDOAH; SHENANDOAH HALAL; SHORELINE; SIMPLY SMART,80,8017,Large,5,5,true
+P791A,M791A + P791A + V791A,Clemens Food Group,4591 Colebrook Avenue,Emmaus,PA,18049,,"Certification - Export, Meat Processing, Poultry Processing",Butcher Wagon; D'Rouco Foods; Hatfield Deli Choice; Hatfield Premium Reserve; Hatfield Quality Meats; Mexi Dog; Nick's Sausage; Prima Porta; Prima Porta by Ferrante Brothers; Red's Legendary,60,6040,Small,4,,false
+P7927,P7927,Amick Farms,274 NEALSON STREET,HURLOCK,MD,21643,2010-10-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8004,Large,5,5,true
+P794,P794,B&B Poultry,110  Almond Road,Norma,NJ,08347,2007-07-08 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",80,8013,Small,4,5,true
+P7964,M7964 + P7964,Columbia Meats.,1140 Carolina Street,West Columbia,SC,29170,2005-02-12 00:00:00 UTC,"Meat Processing, Poultry Processing","",85,8522,Very Small,2,,true
+P7987,P7987,Amick Farms,2079 Batesburg Hwy.,Batesburg,SC,29006,,"Poultry Processing, Poultry Slaughter",Amick Farms,85,8521,Large,5,5,true
+P806,P806,Tyson Foods,PO Box 8,Temperanceville,VA,23442,,"Poultry Processing, Poultry Slaughter","DELIGHTFUL FARMS; HOWARD COUNTY FARMS; TSD SALES AND DISTIBUTION; TYSON FARMS, INC",80,8017,Large,5,5,true
+P810,M810 + P810,Pilgrim's Pride,129 Potomac Avenue,Moorefield,WV,26836,,"Poultry Processing, Poultry Slaughter","Rockingham Poultry, Inc.; Shen Valley Farms; Shen Valley Provisions Co.; Wampler Foods, Inc.; Wampler-Longacre, Inc.",80,8018,Large,5,5,true
+P8107,P8107 + V8107,Squab Producers Of California,409 Primo Way,Modesto,CA,95358,,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","",5,509,Small,4,4,true
+P8117,M19916 + P8117 + V19916,Salt Lake Fine Foods,2685 South Main,Salt Lake City,UT,84115,,"Meat Processing, Poultry Processing, Voluntary Processing - Meat",Main Street Quality Meats; Quality Meats,15,1531,Very Small,3,,true
+P8139,M8139 + P8139,Red Bird Farms Dist.,2520 South Raritan,Englewood,CO,80110,,Meat Processing,Colorado Fresh; Grace Foods; Red Bird Farms,15,1514,Small,3,,true
+P8242,M1996 + P8242 + V1996,Freedom Sausage,4155 E. 1650th Rd.,Earlville,IL,60518,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter, Voluntary Processing - Exotic, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Slaughter - Exotic, Volunt","",50,5005,Very Small,2,2,true
+P8276,M8276 + P8276,Innovative Solutions,6749-6757 S 216th Street,Kent,WA,98032,,"Meat Processing, Poultry Processing","Lucy's Enterprises, Inc",15,1526,Small,4,,true
+P8328,M8328 + P8328,Halpern's Steak and Seafood,1919 NW 19th Street,Fort Lauderdale,FL,33311,,"Meat Processing, Poultry Processing","",85,8535,Small,4,,true
+P8369,P8369,Oaks Poultry,172 Folly Lane,Stoystown,PA,15563,,Poultry Processing,"",60,6013,Very Small,2,,true
+P8389,M8389 + P8389 + V8389,Pasqualichio Bros.,220 Valley View Drive,Jessup,PA,18434,,"Certification - Export, Meat Processing, Poultry Processing","",60,6014,Small,3,,true
+P8406,M8406 + P8406 + V8406,Mennella'a Poultry,100 George Street,Paterson,NJ,07503,,"Certification - Export, Meat Processing, Poultry Processing","",80,8023,Small,4,,true
+P8422,M9783 + P8422,Schiff's Restaurant Service,3410 North Main Avenue,Scranton,PA,18508,,"Meat Processing, Poultry Processing",Schiff's Cash and Carry; Schiff's Marketplace,60,6014,Small,3,,true
+P843,P843,Pilgrim's Pride,5901 W. Marshville Blvd,Marshville,NC,28103,,"Poultry Processing, Poultry Slaughter",Rockingham Poultry; Wampler Foods Inc.,80,8003,Large,5,5,true
+P8437,P8437,Koch's Turkey Farm,416 Valley Road,Tamaqua,PA,18252,,"Poultry Processing, Poultry Slaughter","",60,6040,Small,4,4,true
+P8466,M8466 + P8466,J&G Foods,71 Blackstone Street,Sutton,MA,01590,,"Meat Processing, Poultry Processing",J&G Foods; Larkdale Farms,60,6029,Small,4,,true
+P855,P855,Pilgrim's Pride,898 Barber Street,Athens,GA,30601,,"Poultry Processing, Poultry Slaughter","",85,8503,Small,4,5,true
+P855D,P855D,Pilgrim's Pride,880 Barber Street,Athens,GA,30601,,Poultry Processing,"",85,8503,Large,5,,true
+P8603,M8603 + P8603,Attilio Esposito,1001 South 9th Street,Philadelphia,PA,19147,,"Meat Processing, Poultry Processing",A. Esposito Inc.; Esposito Meats,60,6022,Small,2,,false
+P8727,M8727 + P8727 + V8727,Butterball,411 North Main Street,Carthage,MO,64836,2020-03-02 00:00:00 UTC,"Certification - Export, Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry",Carolina Turkey,35,3518,Large,5,4,true
+P8891,M1097 + P8891,Demakes Enterprises,27-37 Waterhill Street,Lynn,MA,01905,2011-06-04 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6008,Small,4,,true
+P890,P890,Peco Foods,1039 West Fulton Street,Canton,MS,39046,2020-05-02 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","Peco Foods, Inc. Canton Division",90,9004,Large,5,5,true
+P8959,M8959 + P8959 + V8959,Dombrovski Meats,425 Dewey Street,Foley,MN,56329,,"Meat Processing, Poultry Processing, Voluntary Processing - Exotic, Voluntary Processing - Meat, Voluntary Processing - Poultry, Voluntary Processing - Rabbit",Dombrovski Craft Meats; Dombrovski Meats; Dombrovski Meats Co.,25,2504,Small,3,,true
+P8983,M8983 + P8983,Sysco Western Minnesota,809 SE Highway 10,St Cloud,MN,56304,,"Meat Processing, Poultry Processing",Appert's Foodservice; Buckhead Meats of Minnesota,25,2504,Small,4,,true
+P9002,P9002,A. Tarantino & Sons,2275 Jennings Street,San Francisco,CA,94124,,Poultry Processing,"",5,519,Very Small,2,,true
+P9070,M9070 + P9070,Kraft Heinz Foods,3704 Louis Rich Road,Newberry,SC,29108,,"Meat Processing, Poultry Processing, Poultry Slaughter","Kraft Foods Group, Inc.; Kraft Heinz Company",85,8521,Large,5,4,true
+P910,P910,Harrison Poultry,107 Star Street,Bethlehem,GA,30620,2017-02-11 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Barrow Farms,85,8517,Large,5,5,true
+P912,P912,Wayne Farms,444 Baskin Street  South,Union Springs,AL,36089,2019-05-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",90,9001,Large,5,5,true
+P9120,M9120 + P9120,Homestead Egg Company,717 Willow Avenue,Knoxville,TN,37915,2017-09-02 00:00:00 UTC,Poultry Processing,Hillbilly Pride; Homestead Inc,90,9021,Small,3,,true
+P9141,M9141 + P9141,Koch Foods,921 South Main Street,Forest,MS,39074,,"Meat Processing, Poultry Processing","",90,9004,Large,5,,true
+P9165,M9165 + P9165,Foundation Food Group,2076 Memorial Park Road,Gainesville,GA,30504,,"Meat Processing, Poultry Processing",Prime Pak,85,85,Small,4,,true
+P9181,P9181,Koch Foods,950 Industrial Blvd,Gainesville,GA,30503,,Poultry Processing,"",85,8513,Small,5,,true
+P9197,P9197,Perdue Foods,3539 Governor's Road,Lewiston Woodville,NC,27849,2021-04-02 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Chef's Choice; Cook 'n Good; Country Corner; HarvestLand; Pennyworth; Roundy's; Trader Joe's; Wegman's; Weis,80,8015,Large,5,5,true
+P9207,M1160 + P9207,Rocker Bros. Meat & Provision,405 Centinela Ave.,Inglewood,CA,90302,,"Meat Processing, Poultry Processing","",5,535,Small,4,,true
+P9211,M9211 + P9211,T&T Foods,3080 E 50th St.,Vernon,CA,90058,,"Meat Processing, Poultry Processing",Colonel Lee's Enterprises,5,503,Small,3,,true
+P9230,M9230 + P9230,Dayton Natural Meats,13245 SE Fletcher Road,Dayton,OR,97114,,"Meat Processing, Meat Slaughter, Poultry Processing, Poultry Slaughter","",15,1504,Small,3,3,true
+P9305,M9305 + P9305,Ray's Wholesale Meats,2113 S. 3rd. Avenue,Union Gap,WA,98903,2007-07-11 00:00:00 UTC,"Meat Processing, Poultry Processing","",15,1525,Small,3,,true
+P9326,M1557 + P9326 + V1557,MacDonald Meat Company,2709 Airport Way South,Seattle,WA,98134,2018-03-10 00:00:00 UTC,"Certification - Export, Certification - Trichinae, Meat Processing, Poultry Processing, Voluntary Processing - Meat, Voluntary Processing - Poultry","",15,1526,Small,3,,false
+P9332,P9332,Diestel Turkey Ranch,22200 Lyons Bald Mountain Road,Sonora,CA,95370,2014-10-01 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",5,508,Small,4,4,true
+P9332A,P9332A,Diestel Turkey Ranch,14111 Hi Tech Drive,Chinese Camp,CA,95309,,Poultry Processing,"",5,508,Small,4,,true
+P935,P935,Allen Harim,18752 Harbeson Road,Harbeson,DE,19951,,"Poultry Processing, Poultry Slaughter","",80,8004,Large,5,5,true
+P9378,P9378 + V9378,Baffoni's Poultry Farm,324 Greenville Avenue,Johnston,RI,02919,2019-01-06 00:00:00 UTC,"Poultry Processing, Poultry Slaughter, Voluntary Processing - Poultry, Voluntary Slaughter - Poultry","",60,6029,Very Small,2,4,true
+P961,P961,Cargill Meat Solutions,1001 East Smith Street,California,MO,65018,2019-02-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter",Cargill Turkey Products; Cargill Value Added Meats; Excel Corporation,35,3508,Small,5,4,true
+P963,M13289 + P963,Cargill Meat Solutions,730 E. Randall Wobbe Lane,Springdale,AR,72764,2019-02-04 00:00:00 UTC,"Poultry Processing, Poultry Slaughter","",35,3512,Large,5,5,true
+P965,M965 + P965 + V965,Interstate Meat Dist.,9550 SE Last Road,Clackamas,OR,97015,,"Identification - Meat, Meat Processing, Voluntary Processing - Meat",Brothers Choice; Northwest Finest,15,1509,Small,4,,true
+P9684,M9684 + P9684,Keck's Food Service,2796 Rte 328,Millerton,PA,16936,,"Meat Processing, Poultry Processing","",60,6028,Very Small,3,,true
+P9792,M9792 + P9792,Stoltzfus Meats,3718 E. Newport Road,Gordonville,PA,17529,2020-09-10 00:00:00 UTC,"Meat Processing, Poultry Processing","",60,6023,Small,3,,true
+P9900,M9900 + P9900,Lipari's Sausage,220 Sixth Avenue,Hawthorne,NJ,07506,,"Meat Processing, Poultry Processing","JTB Inc.; Royalty Meat & Poultry, LLC",80,8023,Small,3,,true
+P9917,P9917,Philadelphia Poultry,346 N Front Street,Philadelphia,PA,19106,,Poultry Processing,"",60,6022,Small,2,,true
